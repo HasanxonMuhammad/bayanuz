@@ -1,0 +1,23 @@
+~version: "2.1"
+
+# ──────────────────────────────────────────────────────────────
+# BAYAN — Telegram Instant View template
+# Domain:  bayanuz.vercel.app
+# Applies to article pages only.
+# ──────────────────────────────────────────────────────────────
+
+?path: /maqola/.+
+
+# ───── Required ─────
+
+title: //h1
+body:  //*[@id="iv-body"]
+
+# ───── Optional ─────
+
+subtitle: //article//p[contains(@class, "italic")][1]
+
+author:     "باحثو اللغة العربية"
+author_url: "https://bahethoarabia.com/"
+
+published_date: //div[contains(., "daqiqa")]//span[2]

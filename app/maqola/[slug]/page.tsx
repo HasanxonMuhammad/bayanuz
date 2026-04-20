@@ -42,7 +42,7 @@ export default async function ArticlePage({
   return (
     <main className="min-h-screen bg-cream">
       <Nav />
-      <article className="w-full px-6 lg:px-16 pt-8 pb-20">
+      <article id="iv-article" className="w-full px-6 lg:px-16 pt-8 pb-20">
         <div className="max-w-[780px] mx-auto flex flex-col gap-6">
           <Breadcrumb article={article} />
           <CategoryPill article={article} />
@@ -50,7 +50,9 @@ export default async function ArticlePage({
           <AuthorRow article={article} />
           <HeroQuote article={article} />
           <TableOfContents items={article.tableOfContents} />
-          <Body article={article} />
+          <div id="iv-body">
+            <Body article={article} />
+          </div>
           <Tags tags={article.tags} />
           <SourceFooter article={article} />
           <ShareRow article={article} />
