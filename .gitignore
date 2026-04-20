@@ -5,3 +5,4 @@ out
 .DS_Store
 .debug_*.html
 .debug_*.css
+.tmp_*
