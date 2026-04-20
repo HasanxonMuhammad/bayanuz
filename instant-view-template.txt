@@ -15,8 +15,7 @@ body:  //*[@id="iv-body"]
 
 # ───── Optional ─────
 
-cover:    //img[@id="iv-cover"]
-subtitle: //article//p[contains(@class, "italic")][1]
+cover: //img[@id="iv-cover"]
 
 author:     "باحثو اللغة العربية"
 author_url: "https://bahethoarabia.com/"
