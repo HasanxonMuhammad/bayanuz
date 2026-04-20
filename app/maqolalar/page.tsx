@@ -28,6 +28,39 @@ export default function MaqolalarPage() {
             </p>
           </div>
 
+          <aside className="flex flex-col gap-3 p-6 lg:p-7 bg-white rounded-3xl border border-border max-w-3xl">
+            <div className="flex items-center gap-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-soft">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-blue-deep"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 8h.01M11 12h1v4h1" />
+                </svg>
+              </span>
+              <h2 className="text-base font-bold text-forest tracking-[-0.01em]">
+                Maqolalar haqida
+              </h2>
+            </div>
+            <p className="text-[15px] text-muted leading-[1.6]">
+              Ushbu bo&apos;limdagi barcha maqolalar <strong>arab tili,
+              grammatika, balag&apos;at va imlo</strong> bo&apos;yicha ilmiy-akademik
+              yozuvlardir. Matnlarda keltirilgan Qur&apos;on oyatlari va
+              hadislar faqat <em>til va uslub misoli</em> sifatida olingan
+              bo&apos;lib, diniy da&apos;vat yoki ta&apos;lim maqsadida emas.
+              O&apos;quvchilar manbalarni original kontekstda o&apos;rganishlari
+              tavsiya etiladi.
+            </p>
+          </aside>
+
           <div className="grid md:grid-cols-2 gap-6">
             {articles.map((a) => (
               <Link
