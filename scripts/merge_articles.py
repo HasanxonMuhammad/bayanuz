@@ -6,11 +6,12 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-SCRAPED = Path(".scraped_entries.txt")
+SCRAPED_FILES = [Path(".scraped_entries.txt"), Path(".scraped_v2.txt")]
 OUT = Path("lib/articles.ts")
 
 # Slug → (nameAr, nameUz) — overrides the scraper's default detection
 CATEGORY_FIX = {
+    # Batch 1
     "arab-ahamiyati":            ("لغويات", "Til bo'yicha"),
     "somiy-tillar":              ("لغويات", "Til bo'yicha"),
     "arab-kompyuterlashtirish":  ("لغويات", "Til bo'yicha"),
@@ -21,6 +22,24 @@ CATEGORY_FIX = {
     "as-sah":                    ("النحو", "Nahv"),
     "mahjaziya":                 ("النحو", "Nahv"),
     "tashbih":                   ("البلاغة", "Balag'a"),
+    # Batch 2
+    "arab-tili-birinchi":        ("لغويات", "Til bo'yicha"),
+    "arab-tili-kuni":            ("لغويات", "Til bo'yicha"),
+    "xato-galat-farqi":          ("لغويات", "Til bo'yicha"),
+    "akademik-yozish":           ("لغويات", "Til bo'yicha"),
+    "yozuv-texnikalari":         ("لغويات", "Til bo'yicha"),
+    "laisa":                     ("النحو", "Nahv"),
+    "la-nafiya":                 ("النحو", "Nahv"),
+    "jar-harflari":              ("النحو", "Nahv"),
+    "jamid-mushtaq":             ("النحو", "Nahv"),
+    "malum-majhul":              ("الصرف", "Sarf"),
+    "masdar":                    ("الصرف", "Sarf"),
+    "sarf-organish":             ("الصرف", "Sarf"),
+    "sarf-nima":                 ("الصرف", "Sarf"),
+    "imlo-xatolari":             ("الإملاء", "Imlo qoidalari"),
+    "ishoratli-belgilar":        ("الإملاء", "Imlo qoidalari"),
+    "izan-idhan":                ("الإملاء", "Imlo qoidalari"),
+    "imlo-asoslari":             ("الإملاء", "Imlo qoidalari"),
 }
 
 
@@ -106,7 +125,10 @@ export function getArticleBySlug(slug: string): BahethArticle | undefined {
 
 
 def main():
-    raw = SCRAPED.read_text(encoding="utf-8")
+    raw = ""
+    for f in SCRAPED_FILES:
+        if f.exists():
+            raw += f.read_text(encoding="utf-8") + "\n"
     entries = extract_entries(raw)
     print(f"Extracted {len(entries)} entries")
     entries = [fix_category(e) for e in entries]
