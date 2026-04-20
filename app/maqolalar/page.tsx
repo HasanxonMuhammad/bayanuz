@@ -28,12 +28,12 @@ export default function MaqolalarPage() {
             </p>
           </div>
 
-          <aside className="flex flex-col gap-3 p-6 lg:p-7 bg-white rounded-3xl border border-border max-w-3xl">
-            <div className="flex items-center gap-3">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-soft">
+          <details className="group max-w-3xl rounded-2xl border border-border bg-white open:bg-cream transition-colors">
+            <summary className="flex cursor-pointer items-center gap-3 px-5 py-3 list-none [&::-webkit-details-marker]:hidden">
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-soft">
                 <svg
-                  width="16"
-                  height="16"
+                  width="14"
+                  height="14"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -46,20 +46,33 @@ export default function MaqolalarPage() {
                   <path d="M12 8h.01M11 12h1v4h1" />
                 </svg>
               </span>
-              <h2 className="text-base font-bold text-forest tracking-[-0.01em]">
+              <span className="text-sm font-semibold text-forest tracking-[-0.01em]">
                 Maqolalar haqida
-              </h2>
-            </div>
-            <p className="text-[15px] text-muted leading-[1.6]">
+              </span>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="ml-auto text-muted-2 transition-transform group-open:rotate-180"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </summary>
+            <p className="px-5 pb-5 text-[15px] text-muted leading-[1.6]">
               Ushbu bo&apos;limdagi barcha maqolalar <strong>arab tili,
               grammatika, balag&apos;at va imlo</strong> bo&apos;yicha ilmiy-akademik
               yozuvlardir. Matnlarda keltirilgan Qur&apos;on oyatlari va
               hadislar faqat <em>til va uslub misoli</em> sifatida olingan
-              bo&apos;lib, diniy da&apos;vat yoki ta&apos;lim maqsadida emas.
-              O&apos;quvchilar manbalarni original kontekstda o&apos;rganishlari
-              tavsiya etiladi.
+              bo&apos;lib, diniy da&apos;vat yoki diniy ta&apos;lim maqsadida
+              emas. O&apos;quvchilar manbalarni original kontekstda
+              o&apos;rganishlari tavsiya etiladi.
             </p>
-          </aside>
+          </details>
 
           <div className="grid md:grid-cols-2 gap-6">
             {articles.map((a) => (
