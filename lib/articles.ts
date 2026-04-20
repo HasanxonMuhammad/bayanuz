@@ -39,7 +39,7 @@ export const articles: BahethArticle[] = [
     readingMinutes: 8,
     heroTitle: "إتقان اللغة العربية",
     heroSubtitle: "كيف تتقن القراءة والكتابة باللغة العربية",
-    coverImage: "/covers/kif-tutqin-al-qiraa.jpg",
+    coverImage: "/covers/kif-tutqin-al-qiraa.png",
     sourceUrl:
       "https://bahethoarabia.com/لغويات/كيف-تتقن-القراءة-والكتابة-باللغة-العربية",
     tableOfContents: [
