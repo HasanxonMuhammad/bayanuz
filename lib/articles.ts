@@ -14,6 +14,8 @@ export interface BahethArticle {
   titleAr: string;
   titleUz: string;
   authorName: string;
+  /** Path to the author's avatar image (relative to /public). */
+  authorAvatar: string;
   publishedAt: string;
   readingMinutes: number;
   heroTitle: string;
@@ -35,6 +37,7 @@ export const articles: BahethArticle[] = [
     titleAr: "كيف تتقن القراءة والكتابة باللغة العربية",
     titleUz: "Arab tilida o'qish va yozishni qanday o'zlashtirasiz",
     authorName: "أ. منيب محمد مراد",
+    authorAvatar: "/authors/munib-murad.webp",
     publishedAt: "Oktabr 2, 2024",
     readingMinutes: 8,
     heroTitle: "إتقان اللغة العربية",
