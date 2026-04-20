@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F5F3EE;
+  --color-cream-dark: #EDE8DC;
+  --color-forest: #1B3A28;
+  --color-forest-dark: #0F2418;
+  --color-forest-soft: #2D5E3A;
+  --color-forest-light: #B6E27A;
+  --color-red: #DC2626;
+  --color-red-soft: #FFE4E4;
+  --color-blue: #2F6CF6;
+  --color-blue-deep: #1E3A8A;
+  --color-blue-soft: #D6E4FF;
+  --color-gold: #D4AF37;
+  --color-gold-soft: #FFF4D6;
+  --color-muted: #4A6B52;
+  --color-muted-2: #7A9A80;
+  --color-border: #E7EDE0;
+  --color-border-2: #D7D0C2;
+  --color-paper-1: #FDF6E3;
+  --color-paper-2: #F5E6C8;
+  --color-paper-3: #EAD9B7;
+
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-arabic: "Scheherazade New", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-forest);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Arabic body */
+.ar {
+  font-family: var(--font-arabic);
+  direction: rtl;
+}
+
+/* Pill shape */
+.pill {
+  border-radius: 9999px;
+}
+
+/* Subtle hover lift */
+.lift {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(27, 58, 40, 0.08);
+}
