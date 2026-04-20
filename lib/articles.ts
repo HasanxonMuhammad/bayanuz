@@ -22,6 +22,8 @@ export interface BahethArticle {
   tableOfContents: string[];
   body: ArticleBlock[];
   tags: string[];
+  /** Absolute or relative path to the article's cover image (for OG + IV). */
+  coverImage: string;
 }
 
 export const articles: BahethArticle[] = [
@@ -37,6 +39,7 @@ export const articles: BahethArticle[] = [
     readingMinutes: 8,
     heroTitle: "إتقان اللغة العربية",
     heroSubtitle: "كيف تتقن القراءة والكتابة باللغة العربية",
+    coverImage: "/covers/baheth.jpg",
     sourceUrl:
       "https://bahethoarabia.com/لغويات/كيف-تتقن-القراءة-والكتابة-باللغة-العربية",
     tableOfContents: [

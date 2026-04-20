@@ -15,9 +15,17 @@ body:  //*[@id="iv-body"]
 
 # ───── Optional ─────
 
+cover:    //img[@id="iv-cover"]
 subtitle: //article//p[contains(@class, "italic")][1]
 
 author:     "باحثو اللغة العربية"
 author_url: "https://bahethoarabia.com/"
 
 published_date: //div[contains(., "daqiqa")]//span[2]
+
+# ───── RTL support ─────
+
+@set_attr(dir, "rtl"): $body
+@set_attr(dir, "rtl"): $body//p
+@set_attr(dir, "rtl"): $body//h2
+@set_attr(dir, "rtl"): $title

@@ -26,6 +26,20 @@ export async function generateMetadata({
       type: "article",
       publishedTime: article.publishedAt,
       authors: [article.authorName],
+      images: [
+        {
+          url: article.coverImage,
+          width: 1200,
+          height: 630,
+          alt: article.titleUz,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.titleUz,
+      description: article.heroSubtitle,
+      images: [article.coverImage],
     },
   };
 }
@@ -48,6 +62,14 @@ export default async function ArticlePage({
           <CategoryPill article={article} />
           <TitleBlock article={article} />
           <AuthorRow article={article} />
+          {/* Cover image — visible on the web page and picked up by IV */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            id="iv-cover"
+            src={article.coverImage}
+            alt={article.titleUz}
+            className="w-full rounded-2xl border border-border"
+          />
           <HeroQuote article={article} />
           <TableOfContents items={article.tableOfContents} />
           <div id="iv-body">
