@@ -44,14 +44,23 @@ export default function HikoyalarPage() {
                 href={`/hikoya/${b.bookId}`}
                 className="group flex flex-col gap-4 p-6 lg:p-7 bg-white rounded-3xl border border-border hover:border-border-2 lift"
               >
-                <div className="flex items-center gap-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={b.coverImage}
+                  alt={b.titleAr}
+                  className="w-full aspect-[1600/932] object-cover rounded-2xl border border-border"
+                />
+                <div className="flex items-center gap-2 pt-2">
+                  <span className="ar text-sm font-semibold text-blue-deep px-3 py-1 bg-blue-soft rounded-full">
+                    حكاية
+                  </span>
                   <span className="text-[11px] font-medium text-muted">
-                    {b.chapters.length} bob · {b.license.text}
+                    · {b.chapters.length} bob · {b.readingMinutes} min
                   </span>
                 </div>
                 <h2
                   dir="rtl"
-                  className="ar text-3xl font-bold text-forest text-right leading-[1.3] group-hover:text-red transition-colors"
+                  className="ar text-2xl font-bold text-forest text-right leading-[1.4] group-hover:text-red transition-colors"
                 >
                   {b.titleAr}
                 </h2>
@@ -64,7 +73,7 @@ export default function HikoyalarPage() {
                 <p className="text-sm text-muted-2 leading-[1.55]">
                   {b.summaryUz}
                 </p>
-                <div className="flex items-center gap-2 pt-2">
+                <div className="flex items-center gap-2 pt-1 mt-auto">
                   <span className="ar text-sm font-semibold text-muted-2">
                     {b.author}
                   </span>

@@ -21,8 +21,9 @@ export interface KilaniBook {
   authorUz: string;
   publisher: string;
   license: KilaniLicense;
-  coverImage?: string;
+  coverImage: string;
   summaryUz: string;
+  readingMinutes: number;
   chapters: KilaniChapter[];
 }
 
@@ -40,8 +41,10 @@ export const books: KilaniBook[] = [
     ...narada,
     titleUz: "Narada",
     authorUz: "Komil Kiloniy",
+    coverImage: "/covers/books/narada.png",
+    readingMinutes: 12,
     summaryUz:
-      "Hindistonda yashagan jasur bola Narada haqidagi arab tilidagi klassik bolalar hikoyasi. 16 bob — ayiq, sehrgarlar, qutqarilgan amaki qizi.",
+      "Hindistonda yashagan jasur bola Narada haqidagi klassik arab tilidagi bolalar hikoyasi. Ayiq, sehrgarlar, qutqarilgan amaki qizi — 16 bobda.",
   },
 ];
 
