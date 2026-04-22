@@ -45,6 +45,17 @@
       "chaptersCount": 16
     },
     {
+      "bookId": "al-asad-wal-thiran-al-thalatha",
+      "titleAr": "الأسد والثيران الثلاثة",
+      "titleAr_harakat": "الْأَسَدُ والثَّيرانُ الثَّلَاثَةِ",
+      "titleUz": "Arslon va uch hoʻkiz",
+      "summaryUz": "Bir paytlar oʻrmonda uch hoʻkiz – qizil, qora va oq – ahil yashar edi. Arslon ularni yemoqchi boʻlsa-da, birlashgan hoʻkizlarga kuchi yetmasdi. Shunda ayyor chiyaboʻri hiyla bilan ularning orasiga nifoq solib, bir-biridan ajratadi. Bu ertak birlik va doʻstlikning kuchi haqida hikoya qiladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 13,
+      "chaptersCount": 7
+    },
+    {
       "bookId": "asdiqa-al-rabia",
       "titleAr": "أصدقاء الربيع",
       "titleAr_harakat": "أَصْدِقَاءُ الرَّبِيعِ",
@@ -56,6 +67,17 @@
       "chaptersCount": 4
     },
     {
+      "bookId": "al-said-hasan",
+      "titleAr": "السعيد حسن",
+      "titleAr_harakat": "السَّعِيدُ حَسَن",
+      "titleUz": "Baxtli Hasan",
+      "summaryUz": "Kambag'al o'tinchi Hasan va uning oilasi sovuq qishda isinish uchun o'choqqa katta g'o'la tashlaydi. G'o'la ichidan chiqqan asalarilar, qush va qurbaqaga rahmdillik ko'rsatishadi. Bu sehrli jonivorlar esa ularning yaxshiligini ajoyib saroy va boylik bilan taqdirlaydilar.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 11,
+      "chaptersCount": 12
+    },
+    {
       "bookId": "ahlam-bisbisa",
       "titleAr": "أحلام بسبسة",
       "titleAr_harakat": "أَحْلامُ بِسْبِسَة",
@@ -65,6 +87,83 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 2,
       "chaptersCount": 1
+    },
+    {
+      "bookId": "al-asifa",
+      "titleAr": "العاصفة",
+      "titleAr_harakat": "الْعَاصِفَةُ",
+      "titleUz": "Bo'ron",
+      "summaryUz": "Milan gersogi Prospero va uning qizi Miranda sehrli orolda yashaydi. Prospero kuchli sehrgar bo'lib, dushmanlarini orolga keltirish uchun bo'ron chaqiradi. Ular adolatga erishib, uylariga qayta oladilarmi?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 34,
+      "chaptersCount": 7
+    },
+    {
+      "bookId": "al-amir-al-hadi-wal-khamsun",
+      "titleAr": "الأمير الحادي والخمسون",
+      "titleAr_harakat": "الأميرُ الحَادِي وَالْخَمْسُونَ",
+      "titleUz": "Ellik birinchi shahzoda",
+      "summaryUz": "Ellik birinchi shahzoda Hibatulloh o'zining ellikta akasidan farqli o'laroq, jasur va oliyjanob bo'lib ulg'ayadi. Otasi tomonidan quvg'in qilinganiga qaramay, u o'z vatanini dushmanlardan himoya qiladi va hasadgo'y akalarini afv etib, yaxshilikning yovuzlik ustidan g'alabasini isbotlaydi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 20,
+      "chaptersCount": 18
+    },
+    {
+      "bookId": "al-shaykh-al-hindi",
+      "titleAr": "الشيخ الهندي",
+      "titleAr_harakat": "الشَّيْخ الهِنْدِي",
+      "titleUz": "Hind Shayxi",
+      "summaryUz": "Mehribon hind shayxi qafasdagi yoʻlbarsni ozod qiladi. Ammo nonkoʻr yoʻlbars uni yemoqchi boʻladi. Ular olti jonzotdan hukm soʻrashga kelishadilar. Ayyor chiyaboʻri esa oʻz hiylasi bilan yoʻlbarsni yana qafasga qaytarib, shayxni qutqaradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 8,
+      "chaptersCount": 3
+    },
+    {
+      "bookId": "amir-al-afarit",
+      "titleAr": "أمير العفاريت",
+      "titleAr_harakat": "أَمِيرُ الْعَفَارِيتِ",
+      "titleUz": "Ifritlar amiri",
+      "summaryUz": "Savdogar Hamdon bilmasdan ifritning o‘g‘lini o‘ldirib qo‘yadi. Qasos olish uchun kelgan ifrit unga bir yil muhlat beradi. Va'dasiga vafo qilib qaytgan Hamdonni uchta donishmand o‘zlarining ajoyib sarguzashtlarini aytib berib, o‘limdan qutqarib qoladilar.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 14,
+      "chaptersCount": 29
+    },
+    {
+      "bookId": "al-sadiqatan",
+      "titleAr": "الصديقتان",
+      "titleAr_harakat": "الصَّدِيقَتانِ",
+      "titleUz": "Ikki dugona",
+      "summaryUz": "Umm Ya'fur laqabli kuchukcha va Umm Xidosh ismli mushukcha — qalin dugonalar. Ammo mushukchaning bolalari tug'ilgach, ular orasidan qora mushuk o'tadi. Kutilmagan hodisa esa ularning do'stligini qayta sinovdan o'tkazadi. Qahramonlar bu sinovdan o'ta oladilarmi?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 26,
+      "chaptersCount": 12
+    },
+    {
+      "bookId": "al-sinjab-al-saghir",
+      "titleAr": "السنجاب الصغير",
+      "titleAr_harakat": "السِّنْجَابُ الصَّغِيرُ",
+      "titleUz": "Kichik Olmaxon",
+      "summaryUz": "Qiziquvchan malika Safiyya otasi taqiqlagan xonaga kirib, u yerda qamalgan kichik olmaxonni ozod qiladi. Ammo bu jonzot aslida yovuz sehrgar Sun'uba edi. Endi malika o'z xatosi oqibatlarini tuzatish va yaqinlarini qutqarish uchun uzoq va mashaqqatli sinovlardan o'tishi kerak.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 51,
+      "chaptersCount": 7
+    },
+    {
+      "bookId": "adwa-min-al-mawlid-al-said",
+      "titleAr": "أضواء من المولد السعيد",
+      "titleAr_harakat": "أَضْوَاءٌ مِنَ الْمُوْلِدِ السَّعِيدِ",
+      "titleUz": "Muborak Tavallud Nuridan",
+      "summaryUz": "Uch do‘st — Rashod, Saloh va Said — Payg‘ambarimiz Muhammad (s.a.v.) tavalludlari haqida suhbatlashadilar. Ular Fil voqeasi kabi tarixiy hodisalarni eslab, islomning asosiy tamoyillarini muhokama qiladilar.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 17,
+      "chaptersCount": 28
     },
     {
       "bookId": "narada",
@@ -87,6 +186,94 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 27,
       "chaptersCount": 5
+    },
+    {
+      "bookId": "al-sayyad-wal-ankaba",
+      "titleAr": "الصياد والعنكبة",
+      "titleAr_harakat": "الصَّيَّادُ وَالْعَنْكَبَةُ",
+      "titleUz": "Ovchi va O'rgimchak",
+      "summaryUz": "Marmar ismli mohir ovchining ovlari o'ngidan kelmay qoladi. Bunga uning hayvonlarga rahmi kelgan rafiqasi Zumurrada sababchi edi. Tushkunlikka tushgan Marmar o'rmonda o'rgimchakdan to'r to'qishni o'rganadi va ovning yangi, xavfsiz usulini kashf etadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 12,
+      "chaptersCount": 10
+    },
+    {
+      "bookId": "arnab-fi-al-qamar",
+      "titleAr": "أرنب في القمر",
+      "titleAr_harakat": "أَرْنَبٌ فِي الْقَمَرِ",
+      "titleUz": "Oydagi quyon",
+      "summaryUz": "To'rt do'st — quyon, chiyabo'ri, it va maymun — xayr-ehson qilishga ahdlashadilar. Beradigan hech narsasi yo'q fidokor quyon o'zini qurbon qilmoqchi bo'ladi. Uning sadoqatidan ta'sirlangan farishta quyonsiymosini oyga abadiy muhrlab qo'yadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 10,
+      "chaptersCount": 13
+    },
+    {
+      "bookId": "al-tajir-marmar",
+      "titleAr": "التاجر مرمر",
+      "titleAr_harakat": "التَّاجِرُ مَرْمَرٌ",
+      "titleUz": "Savdogar Marmar",
+      "summaryUz": "Halol savdogar Marmar o'g'li Safo'ni yo'qotib qo'yadi. Uzoq safarda topib olgan pul to'la kamarni egasiga qaytarishi esa uni yo'qolgan o'g'liga qayta uchrashtiradi. Bu ertak halollikning mukofoti haqida.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 4,
+      "chaptersCount": 1
+    },
+    {
+      "bookId": "al-amira-al-qasiya",
+      "titleAr": "الأميرة القاسية",
+      "titleAr_harakat": "الْأَمِيرَةُ الْقَاسِيَةُ",
+      "titleUz": "Shafqatsiz Malika",
+      "summaryUz": "Goʻzal, ammo shafqatsiz malika va isteʼdodli, lekin xunuk shahzoda haqida ertak. Shahzoda oʻzining hunari va mehri bilan malikaning sevgisiga sazovor boʻla oladimi yoki tashqi koʻrinish hamma narsadan ustun keladimi?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 13,
+      "chaptersCount": 3
+    },
+    {
+      "bookId": "al-amir-mishmish",
+      "titleAr": "الأمير مشمش",
+      "titleAr_harakat": "الْأَمِيرُ مِشْمِش",
+      "titleUz": "Shahzoda O'rik",
+      "summaryUz": "Ikki ochko'z akasidan farqli o'laroq, mehribon Ramin sehrlangan shahzoda O'rikka yordam beradi. Shahzoda unga tog' cho'qqisiga chiqib, daryoga suv tomizsa, xazina topishini aytadi. Akalari ochko'zlik qilib yo'lda adashadi, Ramin esa yo'lda uchragan jonzotlarga yordam berib, sinovdan o'tadi va mukofotlanadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 5,
+      "chaptersCount": 1
+    },
+    {
+      "bookId": "umm-sind-wa-umm-hind",
+      "titleAr": "أم سند وأم هند",
+      "titleAr_harakat": "أُمُّ سِنْدٍ وَأُمُّ هِنْدِ",
+      "titleUz": "Sindning onasi va Hindning onasi",
+      "summaryUz": "Ikki qaldirg'och dugona, Sindning onasi va Hindning onasi, bitta uya ustida janjallashib qolishadi. Ammo keyinroq ulardan biri mushkul ahvolga tushib qolganda, ikkinchisi yordamga keladi va ularning do'stligi yana avvalgidek mustahkamlanadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 25,
+      "chaptersCount": 6
+    },
+    {
+      "bookId": "al-shamadan-al-hadidi",
+      "titleAr": "الشمعدان الحديدي",
+      "titleAr_harakat": "الشَّمْعَدانُ الْحَدِيدِيُّ",
+      "titleUz": "Temir shamdon",
+      "summaryUz": "Otasi vafot etganidan so'ng, Ridvon ismli bola otasining do'sti bilan uzoq safarga chiqadi. U xazinalarga to'la g'orga kirib, faqat bitta temir shamdonni olib chiqishi kerak edi. Ridvon bu sinovdan o'ta oladimi? Bu g'aroyib shamdonning siri nimada?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 14,
+      "chaptersCount": 18
+    },
+    {
+      "bookId": "al-dik-al-zarif",
+      "titleAr": "الديك الظريف",
+      "titleAr_harakat": "الدِّيكُ الطَّرِيفُ",
+      "titleUz": "Zukko Xo'roz",
+      "summaryUz": "Zukko Xo'roz tulkining hiylasiga aldanib qolay deydi, ammo o'zining topqirligi va do'stlarining yordami bilan qutulib qoladi. Bu ertak aql va do'stlik har qanday xavfdan ustun kelishi haqida.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 10,
+      "chaptersCount": 16
     }
   ]
 }
