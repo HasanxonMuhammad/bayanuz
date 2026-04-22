@@ -1,6 +1,17 @@
 {
   "books": [
     {
+      "bookId": "abu-sir-wa-abu-qir",
+      "titleAr": "أبو صير وأبو قير",
+      "titleAr_harakat": "أَبُو صِيرٍ وَأَبُو قِيرٍ",
+      "titleUz": "Abu Sir va Abu Qir",
+      "summaryUz": "Yaxshi sartarosh Abu Sir va yovuz bo'yoqchi Abu Qirning sarguzashtlari. Ular birga sayohatga chiqishadi, lekin Abu Qir do'stiga doim xiyonat qiladi. Oxir-oqibat, yaxshilik g'olib keladimi yoki yovuzlik?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 10,
+      "chaptersCount": 15
+    },
+    {
       "bookId": "abu-kharbush",
       "titleAr": "أبو خربوش",
       "titleAr_harakat": "أَبُو خَرْبُوش",
@@ -43,6 +54,17 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 22,
       "chaptersCount": 4
+    },
+    {
+      "bookId": "ahlam-bisbisa",
+      "titleAr": "أحلام بسبسة",
+      "titleAr_harakat": "أَحْلامُ بِسْبِسَة",
+      "titleUz": "Bisbisaning tushlari",
+      "summaryUz": "Bisbisa ismli mushukcha sichqon va qushni tuta olmay, omadsiz kun o'tkazadi. Keyin uxlab qolib, tushida o'zini qanotli, uddaburon ovchi sifatida ko'radi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 2,
+      "chaptersCount": 1
     },
     {
       "bookId": "narada",
