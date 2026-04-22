@@ -23,6 +23,28 @@
       "chaptersCount": 12
     },
     {
+      "bookId": "asrar-ammar",
+      "titleAr": "أسرار عمار",
+      "titleAr_harakat": "أَسْرَارُ «عَمَّارٍ»",
+      "titleUz": "Ammorning sirlari",
+      "summaryUz": "Ammor ismli dehqon o‘z hayvonlarining suhbatini eshitib qoladi. Dangasa eshak ho‘kizga kasal bo‘lib ko‘rinishni maslahat beradi, ammo bu ayyorlik o‘zining boshiga tushadi. Ammor bu sirdan qanday foydalanadi?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 11,
+      "chaptersCount": 16
+    },
+    {
+      "bookId": "asdiqa-al-rabia",
+      "titleAr": "أصدقاء الربيع",
+      "titleAr_harakat": "أَصْدِقَاءُ الرَّبِيعِ",
+      "titleUz": "Bahor Do'stlari",
+      "summaryUz": "Kaltakesak Abu Burays va qurbaqa Dabbat al-Nahr qishki uyqudan uyg'onib, bahor kelganidan xursand bo'lishadi. Ular birgalikda sarguzashtlarni boshdan kechirib, o'zgarishlar va tabiat mo'jizalari haqida suhbatlashadilar.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 22,
+      "chaptersCount": 4
+    },
+    {
       "bookId": "narada",
       "titleAr": "نارادا",
       "titleAr_harakat": "نَارَادَا",
@@ -32,6 +54,17 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 8,
       "chaptersCount": 16
+    },
+    {
+      "bookId": "usrat-al-sanajib",
+      "titleAr": "أسرة السناجيب",
+      "titleAr_harakat": "أُسْرَةُ السَّنَاجِيبِ",
+      "titleUz": "Olmoxonlar oilasi",
+      "summaryUz": "Qunzu'a ismli olmoxon va uning uch o'g'li qattiq bo'rondan omon qolishga harakat qiladi. Ular uyini yo'qotgan sichqoncha Ummu Roshidni uchratib, unga yordam berishadi va oila, do'stlik haqida muhim saboqlar olishadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 27,
+      "chaptersCount": 5
     }
   ]
 }
