@@ -1,0 +1,37 @@
+{
+  "books": [
+    {
+      "bookId": "abu-kharbush",
+      "titleAr": "أبو خربوش",
+      "titleAr_harakat": "أَبُو خَرْبُوش",
+      "titleUz": "Abu Xarbush",
+      "summaryUz": "Maymunlar sultoni Abu Xarbush kasal bo'lib qoladi. Tuzalgach, u butun qirollikdagi maymunlar uchun maktablar ochishni buyuradi. Kichik maymunlar turli xil ulovlarda o'qishga kelib, qiziqarli kasblarni o'rganishadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 2,
+      "chaptersCount": 1
+    },
+    {
+      "bookId": "abu-al-hasan",
+      "titleAr": "أبو الحسن",
+      "titleAr_harakat": "أَبُو الْحَسَنِ",
+      "titleUz": "Abul Hasan",
+      "summaryUz": "Bag‘dodlik boyvachcha Abul Hasan do‘stlaridan hafsalasi pir bo‘lib, bir kunga xalifa bo‘lishni orzu qiladi. Bu orzusini eshitib qolgan xalifa Horun ar-Rashid unga ajoyib hazil uyushtiradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 5,
+      "chaptersCount": 12
+    },
+    {
+      "bookId": "narada",
+      "titleAr": "نارادا",
+      "titleAr_harakat": "نَارَادَا",
+      "titleUz": "Narada",
+      "summaryUz": "Hindistonda yashagan jasur bola Narada ayiq va ikki sehrgardan o'z shahrini himoya qilib, amaki qizini qutqaradi. 16 bobli klassik arab hikoyasi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 8,
+      "chaptersCount": 16
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { books } from "@/lib/books";
+import { getAllBooksMeta } from "@/lib/books";
 
 export const metadata: Metadata = {
   title: "Hikoyalar · BAYAN",
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function HikoyalarPage() {
+  const books = getAllBooksMeta();
   return (
     <main className="min-h-screen bg-cream">
       <Nav />
@@ -55,7 +56,7 @@ export default function HikoyalarPage() {
                     حكاية
                   </span>
                   <span className="text-[11px] font-medium text-muted">
-                    · {b.chapters.length} bob · {b.readingMinutes} min
+                    · {b.chaptersCount} bob · {b.readingMinutes} min
                   </span>
                 </div>
                 <h2

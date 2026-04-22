@@ -1,12 +1,16 @@
 {
   "bookId": "narada",
   "titleAr": "نارادا",
+  "titleAr_harakat": "نَارَادَا",
+  "titleUz": "Narada",
+  "summaryUz": "Hindistonda yashagan jasur bola Narada ayiq va ikki sehrgardan o'z shahrini himoya qilib, amaki qizini qutqaradi. 16 bobli klassik arab hikoyasi.",
   "author": "كامل كيلاني",
   "publisher": "مؤسسة هنداوي",
   "license": {
     "text": "Public Domain",
     "design": "CC BY 4.0"
   },
+  "readingMinutes": 8,
   "chapters": [
     {
       "number": 1,

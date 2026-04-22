@@ -1,4 +1,5 @@
-import naradaRaw from "./data/kilani/narada.json";
+import fs from "node:fs";
+import path from "node:path";
 
 export interface KilaniChapter {
   number: number;
@@ -13,52 +14,52 @@ export interface KilaniLicense {
   design: string;
 }
 
-export interface KilaniBook {
+/** Kitoblar ro'yxati uchun yengil metadata (body yo'q). */
+export interface KilaniBookMeta {
   bookId: string;
   titleAr: string;
+  titleAr_harakat: string;
   titleUz: string;
-  author: string;
-  authorUz: string;
-  publisher: string;
-  license: KilaniLicense;
-  coverImage: string;
   summaryUz: string;
-  readingMinutes: number;
-  chapters: KilaniChapter[];
-}
-
-const narada = naradaRaw as unknown as {
-  bookId: string;
-  titleAr: string;
   author: string;
   publisher: string;
-  license: KilaniLicense;
-  chapters: KilaniChapter[];
-};
-
-export const books: KilaniBook[] = [
-  {
-    ...narada,
-    titleUz: "Narada",
-    authorUz: "Komil Kiloniy",
-    coverImage: "/covers/books/narada.png",
-    readingMinutes: 12,
-    summaryUz:
-      "Hindistonda yashagan jasur bola Narada haqidagi klassik arab tilidagi bolalar hikoyasi. Ayiq, sehrgarlar, qutqarilgan amaki qizi — 16 bobda.",
-  },
-];
-
-export function getBookById(id: string): KilaniBook | undefined {
-  return books.find((b) => b.bookId === id);
+  readingMinutes: number;
+  chaptersCount: number;
 }
 
-export function getChapter(
+/** Reader uchun to'liq kitob (barcha boblar body bilan). */
+export interface KilaniBook extends KilaniBookMeta {
+  license: KilaniLicense;
+  chapters: KilaniChapter[];
+}
+
+const DATA_DIR = path.join(process.cwd(), "lib", "data", "kilani");
+
+function coverPath(bookId: string): string {
+  return `/covers/books/${bookId}.png`;
+}
+
+/** Barcha kitoblarning metadata ro'yxati — build time'da o'qiladi. */
+export function getAllBooksMeta(): (KilaniBookMeta & { coverImage: string })[] {
+  const idxPath = path.join(DATA_DIR, "books-index.json");
+  if (!fs.existsSync(idxPath)) return [];
+  const raw = fs.readFileSync(idxPath, "utf-8");
+  const { books } = JSON.parse(raw) as { books: KilaniBookMeta[] };
+  return books.map((b) => ({ ...b, coverImage: coverPath(b.bookId) }));
+}
+
+/** Bitta kitobning to'liq ma'lumotlarini o'qish. */
+export function getBook(
   bookId: string,
-  chapterNumber: number,
-): { book: KilaniBook; chapter: KilaniChapter } | undefined {
-  const book = getBookById(bookId);
-  if (!book) return undefined;
-  const chapter = book.chapters.find((c) => c.number === chapterNumber);
-  if (!chapter) return undefined;
-  return { book, chapter };
+): (KilaniBook & { coverImage: string }) | null {
+  const p = path.join(DATA_DIR, `${bookId}.json`);
+  if (!fs.existsSync(p)) return null;
+  const raw = fs.readFileSync(p, "utf-8");
+  const data = JSON.parse(raw) as KilaniBook;
+  return {
+    ...data,
+    titleAr_harakat: data.titleAr_harakat ?? data.titleAr,
+    chaptersCount: data.chapters.length,
+    coverImage: coverPath(bookId),
+  };
 }

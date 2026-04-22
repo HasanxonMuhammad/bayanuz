@@ -3,10 +3,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { books, getBookById } from "@/lib/books";
+import { getAllBooksMeta, getBook } from "@/lib/books";
 
 export async function generateStaticParams() {
-  return books.map((b) => ({ book: b.bookId }));
+  return getAllBooksMeta().map((b) => ({ book: b.bookId }));
 }
 
 export async function generateMetadata({
@@ -15,10 +15,10 @@ export async function generateMetadata({
   params: Promise<{ book: string }>;
 }): Promise<Metadata> {
   const { book: bookId } = await params;
-  const book = getBookById(bookId);
+  const book = getBook(bookId);
   if (!book) return { title: "Hikoya topilmadi" };
   return {
-    title: `${book.titleUz} · ${book.authorUz} · BAYAN`,
+    title: `${book.titleUz} · Komil Kiloniy · BAYAN`,
     description: book.summaryUz,
     openGraph: {
       title: `${book.titleAr} — ${book.author}`,
@@ -49,7 +49,7 @@ export default async function BookPage({
   params: Promise<{ book: string }>;
 }) {
   const { book: bookId } = await params;
-  const book = getBookById(bookId);
+  const book = getBook(bookId);
   if (!book) notFound();
 
   return (
@@ -126,7 +126,6 @@ function AuthorRow({
 }: {
   book: {
     author: string;
-    authorUz: string;
     publisher: string;
     readingMinutes: number;
     chapters: { number: number }[];
@@ -134,12 +133,12 @@ function AuthorRow({
 }) {
   return (
     <div className="flex flex-wrap items-center gap-3.5 py-3 border-y border-border">
-      <div
-        className="w-11 h-11 rounded-full flex items-center justify-center shrink-0 border border-border"
-        style={{ background: "#1E3A8A" }}
-      >
-        <span className="ar text-xl font-bold text-white">ك</span>
-      </div>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/authors/kamil-kilani.webp"
+        alt={book.author}
+        className="w-11 h-11 rounded-full object-cover shrink-0 border border-border"
+      />
       <div className="flex flex-col flex-1 min-w-0">
         <span className="ar text-[15px] font-bold text-forest text-right truncate">
           {book.author}
@@ -149,7 +148,7 @@ function AuthorRow({
         </span>
       </div>
       <div className="flex items-center gap-3 text-sm text-muted">
-        <span>{book.authorUz}</span>
+        <span>Komil Kiloniy</span>
         <span className="w-1 h-1 rounded-full bg-border-2" />
         <span>{book.chapters.length} bob</span>
         <span className="w-1 h-1 rounded-full bg-border-2" />
