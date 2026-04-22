@@ -45,6 +45,61 @@
       "chaptersCount": 3
     },
     {
+      "bookId": "ajiba-wa-ajiba",
+      "titleAr": "عجيبة وعجيبة",
+      "titleAr_harakat": "عَجِيبَةُ وَعَجِيبَةُ",
+      "titleUz": "Ajiba va Ajiba",
+      "summaryUz": "Malika Ajiba o'ziga o'xshash sehrli qiyofadosh paydo bo'lgach, taxtidan va kimligidan ayriladi. Surgun qilingan malika qirol G'olibni uchratadi va u bilan birga o'z hayotini o'g'irlagan jodugarlarga qarshi kurashib, haqiqatni tiklashga harakat qiladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 34,
+      "chaptersCount": 6
+    },
+    {
+      "bookId": "dindish-al-ajib",
+      "titleAr": "دندش العجيب",
+      "titleAr_harakat": "دِنْدِشُ الْعَجِيبُ",
+      "titleUz": "Ajoyib Dindish",
+      "summaryUz": "Makkor tulki Dindish boshqa hayvonlarni aldab, o'z bog'iga chaqirib, yemoqchi bo'ladi. U qushlarni yaxshi ko'rishini aytib, chumchuqni ishontiradi. Ammo qarg'a uning asl rejasini eshitib qolib, barchani ogohlantiradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 2,
+      "chaptersCount": 1
+    },
+    {
+      "bookId": "fi-bilad-al-ajaib",
+      "titleAr": "في بلاد العجائب",
+      "titleAr_harakat": "فِي بِلَادِ الْعَجَائِبِ",
+      "titleUz": "Ajoyibotlar mamlakatida",
+      "summaryUz": "Qadim zamonlarda, Ajoyibotlar mamlakatida Lafiz va Lahiza ismli bolalar yashar edi. Bir kuni ular sirli, qulflangan sandiqni topib olishadi. Qiziquvchan Lahiza sandiqni ochishga qaror qiladi va dunyoga barcha baxtsizliklarni chiqarib yuboradi. Ammo sandiq tubida umid qolgan edi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 22,
+      "chaptersCount": 20
+    },
+    {
+      "bookId": "ali-baba",
+      "titleAr": "علي بابا",
+      "titleAr_harakat": "عَلِي بَابًا",
+      "titleUz": "Ali Bobo",
+      "summaryUz": "Kambag'al o'tinchi Ali Bobo tasodifan qaroqchilarning sehrli g'orini topib oladi. Uning ochko'z akasi Qosim xazinani qo'lga kiritmoqchi bo'lib halok bo'ladi. Endi qaroqchilar Ali Bobodan o'ch olish payiga tushishadi, ammo uning topqir cho'risi Marjona o'zining aql-zakovati bilan xo'jayinini qutqarib qoladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 11,
+      "chaptersCount": 14
+    },
+    {
+      "bookId": "ala-al-din",
+      "titleAr": "علاء الدين",
+      "titleAr_harakat": "عَلَاءُ الدِّينِ",
+      "titleUz": "Alouddin",
+      "summaryUz": "Kambag'al yigit Alouddin sehrli chiroqni topib, undagi jin yordamida yovuz sehrgarni yengadi va malikaga uylanib, baxtli hayot kechiradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 50,
+      "chaptersCount": 8
+    },
+    {
       "bookId": "asrar-ammar",
       "titleAr": "أسرار عمار",
       "titleAr_harakat": "أَسْرَارُ «عَمَّارٍ»",
@@ -54,6 +109,17 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 11,
       "chaptersCount": 16
+    },
+    {
+      "bookId": "amara",
+      "titleAr": "عمارة",
+      "titleAr_harakat": "عُمَارَة",
+      "titleUz": "Amora",
+      "summaryUz": "Dangasa Amora onasining qistovi bilan ish qidirishga majbur bo'ladi. Ammo u shunaqa nodonki, har bir topshiriqni kulgili tarzda barbod qiladi. Bu sarguzashtlar oxirida u o'z baxtini topa olarmikan?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 4,
+      "chaptersCount": 10
     },
     {
       "bookId": "al-arnab-al-dhaki",
@@ -111,6 +177,17 @@
       "chaptersCount": 6
     },
     {
+      "bookId": "hikayat-bahloul",
+      "titleAr": "حكاية بهلول",
+      "titleAr_harakat": "حكاية بهلول",
+      "titleUz": "Bahlulning hikoyasi",
+      "summaryUz": "Bahlul — xayolparast bola, uning beparvoligi bir qator ko'ngilsizliklarga sabab bo'ladi va diqqatli bo'lishga o'rgatadi. Kitobda, shuningdek, ruxsatsiz uzum olmoqchi bo'lgan Samira haqidagi she'riy hikoya ham bor.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 9,
+      "chaptersCount": 2
+    },
+    {
       "bookId": "asdiqa-al-rabia",
       "titleAr": "أصدقاء الربيع",
       "titleAr_harakat": "أَصْدِقَاءُ الرَّبِيعِ",
@@ -131,6 +208,17 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 11,
       "chaptersCount": 12
+    },
+    {
+      "bookId": "ghaflat-bahloul",
+      "titleAr": "غفلة بهلول",
+      "titleAr_harakat": "غَفْلَةُ بَهْلُولٍ",
+      "titleUz": "Beparvo Bahlul",
+      "summaryUz": "Bahlul osmonga qarab xayol surishni yaxshi ko'radigan bola. Ammo bu beparvoligi uni doim ko'ngilsizliklarga duchor qiladi! U loyga yiqiladi, qoqiladi va hatto dengizda cho'kishiga bir bahya qoladi. Bahlul ehtiyot bo'lishni o'rganarmikan?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 3,
+      "chaptersCount": 8
     },
     {
       "bookId": "ahlam-bisbisa",
@@ -177,6 +265,61 @@
       "chaptersCount": 12
     },
     {
+      "bookId": "harisat-al-nahr",
+      "titleAr": "حارسة النهر",
+      "titleAr_harakat": "حَارِسَةُ النَّهْرِ",
+      "titleUz": "Daryo qo'riqchisi",
+      "summaryUz": "Aqlli quyon Sawsana o'z vatanini ikki zo'ravon — fil va begemotdan qanday himoya qilgani haqida ertak. U kuch bilan emas, aql bilan g'alaba qozonish mumkinligini isbotlaydi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 19,
+      "chaptersCount": 2
+    },
+    {
+      "bookId": "sindibad-al-bahri",
+      "titleAr": "السندباد البحري",
+      "titleAr_harakat": "السِّنْدِبَادُ البَحْرِيُّ",
+      "titleUz": "Dengizchi Sindbod",
+      "summaryUz": "Dengizchi Sindbodning ajoyib sarguzashtlari va yetti dengiz bo‘ylab qilgan mo‘jizaviy sayohatlari haqidagi mashhur ertak.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 57,
+      "chaptersCount": 11
+    },
+    {
+      "bookId": "qahir-al-jababira",
+      "titleAr": "قاهر الجبابرة",
+      "titleAr_harakat": "قَاهِرُ الْجَبَابِرَةِ",
+      "titleUz": "Devlarni Yenguvchi",
+      "summaryUz": "Bir qishloqda suvni ichib, qurg'oqchilik keltirib chiqargan bahaybat dev paydo bo'ladi. O'rmonchi Sulaymon o'zining jasorati va topqirligi bilan bu zolim devga qarshi chiqadi va o'z oilasi hamda qishlog'ini qutqarish uchun kurashadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 19,
+      "chaptersCount": 4
+    },
+    {
+      "bookId": "dimna-wa-shatraba",
+      "titleAr": "دمنة وشتربة",
+      "titleAr_harakat": "دِمْنَةُ وَشَتْرَبَة",
+      "titleUz": "Dimna va Shatraba",
+      "summaryUz": "Ayyor shoqol Dimna hasad tufayli sher podshohni uning yangi do'sti Shatraba ismli ho'kizga qarshi qayraydi. Dimnaning yolg'onlari ikki do'st o'rtasida fojiali jangga olib keladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 5,
+      "chaptersCount": 1
+    },
+    {
+      "bookId": "kis-al-dananir",
+      "titleAr": "كيس الدنانير",
+      "titleAr_harakat": "كِيسُ الدَّنَانِيرُ",
+      "titleUz": "Dinarli xaltacha",
+      "summaryUz": "Juha o'zining baxil va qiziquvchan qo'shnisiga saboq berish uchun ajoyib reja tuzadi. U har kuni Xudodan ming dinor so'rab duo qiladi va qo'shnisi bu tuzoqqa tushib qoladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 10,
+      "chaptersCount": 17
+    },
+    {
       "bookId": "al-malik-al-najjar",
       "titleAr": "الملك النجار",
       "titleAr_harakat": "الْمَلِكُ النَّجَّارُ",
@@ -188,6 +331,17 @@
       "chaptersCount": 2
     },
     {
+      "bookId": "aduww-al-maiz",
+      "titleAr": "عدو المعيز",
+      "titleAr_harakat": "عَدُوُّ الْمَعِيزِ",
+      "titleUz": "Echkilar Dushmani",
+      "summaryUz": "Uchta echki o'zlariga uy qurishga qaror qilishadi. Ammo yovuz bo'ri ularning tinchini buzadi. Somon va yog'ochdan qurilgan uylar bir zumda qulaydi. Faqatgina aqlli va tadbirkor echkigina toshdan mustahkam uy qurib, bo'rini yengishga muvaffaq bo'ladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 5,
+      "chaptersCount": 12
+    },
+    {
       "bookId": "al-amir-al-hadi-wal-khamsun",
       "titleAr": "الأمير الحادي والخمسون",
       "titleAr_harakat": "الأميرُ الحَادِي وَالْخَمْسُونَ",
@@ -197,6 +351,61 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 20,
       "chaptersCount": 18
+    },
+    {
+      "bookId": "laylat-al-mihrajan",
+      "titleAr": "ليلة المهرجان",
+      "titleAr_harakat": "لَيْلَةُ الْمِهْرَجَانِ",
+      "titleUz": "Festival kechasi",
+      "summaryUz": "Juha bahor festivaliga borib, charchagach, katta savatga yashirinib uxlab qoladi. Ikki o‘g‘ri savatni to‘la deb o‘ylab, uni o‘g‘irlab ketishadi. Juha esa ularga esda qolarli saboq berish uchun ayyorona reja tuzadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 7,
+      "chaptersCount": 5
+    },
+    {
+      "bookId": "jalifar-fi-jazirat-al-jiyad-al-natiqa",
+      "titleAr": "جلفر في جزيرة الجياد الناطقة",
+      "titleAr_harakat": "جَلِفَرْ في جزيرة الجياد الناطقة",
+      "titleUz": "Gulliver so'zlovchi otlar orolida",
+      "summaryUz": "Gulliverning sarguzashtlari uni g'aroyib orolga olib keladi. Bu yerda yovvoyi, odamsimon maxluqlar va yuksak ongga ega, so'zlashuvchi otlar yashaydi. Gulliver otlar jamiyatiga qo'shilib, insoniyat tabiati haqida qayta o'ylashga majbur bo'ladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 39,
+      "chaptersCount": 3
+    },
+    {
+      "bookId": "hayy-bin-yaqzan",
+      "titleAr": "حي بن يقظان",
+      "titleAr_harakat": "حَيُّ بنُ يَقْظَانَ",
+      "titleUz": "Hay ibn Yaqzon",
+      "summaryUz": "Yolg'iz orolda g'azollar tarbiyasida ulg'aygan Hay ibn Yaqzon aql va kuzatuv orqali tabiat sirlarini va Yaratuvchini anglab yetadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 52,
+      "chaptersCount": 7
+    },
+    {
+      "bookId": "shajarat-al-hayat",
+      "titleAr": "شجرة الحياة",
+      "titleAr_harakat": "شَجَرَةُ الْحَيَاةِ",
+      "titleUz": "Hayot daraxti",
+      "summaryUz": "Yusuf ismli jasur bola bemor onasini davolash uchun Hayot daraxtini izlab xavfli safarga otlanadi. U yo'lida uchragan turli sehrli jonzotlarga yordam beradi va buning evaziga ular ham unga qiyin to'siqlarni yengib o'tishda ko'maklashadilar.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 42,
+      "chaptersCount": 8
+    },
+    {
+      "bookId": "al-waaz-al-qasasi",
+      "titleAr": "الوعظ القصصي والوعظ الكاذب ومقالات أخرى",
+      "titleAr_harakat": "الْوَعْظُ الْقَصَصِيُّ وَالْوَعْظُ الْكَاذِبُ وَمَقَالَاتٌ أُخْرَى",
+      "titleUz": "Hikoyali va'z va boshqa maqolalar",
+      "summaryUz": "Kamil Kiloniyning ushbu to'plami hikoyali va'zxonlik, adabiy tanqid, islom tarixi va boshqa mavzulardagi maqolalarni o'z ichiga oladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 16,
+      "chaptersCount": 3
     },
     {
       "bookId": "al-qasr-al-hindi",
@@ -221,6 +430,17 @@
       "chaptersCount": 3
     },
     {
+      "bookId": "ibn-jubayr-fi-misr-wal-hijaz",
+      "titleAr": "ابن جبير في مصر والحجاز",
+      "titleAr_harakat": "ابْنُ جُبَيْرٍ فِي مِصْرَ وَالْحِجازِ",
+      "titleUz": "Ibn Jubayr Misr va Hijozda",
+      "summaryUz": "Kamil Kiloniyning ushbu asari mashhur sayyoh Ibn Jubayrning Granadadan Misr va Hijozga qilgan hayajonli safari haqida hikoya qiladi. Kitob bolalar uchun soddalashtirilgan.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 36,
+      "chaptersCount": 4
+    },
+    {
       "bookId": "amir-al-afarit",
       "titleAr": "أمير العفاريت",
       "titleAr_harakat": "أَمِيرُ الْعَفَارِيتِ",
@@ -243,6 +463,50 @@
       "chaptersCount": 12
     },
     {
+      "bookId": "dhat-al-janahayn",
+      "titleAr": "ذات الجناحين",
+      "titleAr_harakat": "ذَاتُ الْجَنَاحَيْنِ",
+      "titleUz": "Ikki qanotli",
+      "summaryUz": "Zolim hokim Kamish novvoydan pishirilgan g'ozni tortib oladi va uning egasiga \"g'ozing uchib ketdi\" deb aytishni buyuradi. Bu voqea shaharda g'alati va kulgili tartibsizliklarga sabab bo'ladi. Adolatsiz hukmlardan charchagan novvoy va boshqa jabrdiydalar nima qilar ekan?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 12,
+      "chaptersCount": 3
+    },
+    {
+      "bookId": "qassas-al-athar",
+      "titleAr": "قصاص الأثر",
+      "titleAr_harakat": "قَصَاصُ الْأَثَرِ",
+      "titleUz": "Izquvar",
+      "summaryUz": "G'ayrioddiy g'ul-onadan tug'ilgan bola o'zining noyob izquvarlik qobiliyati tufayli otasi bilan asirlikdan qochadi. U qirol saroyida xizmat qilib, o'g'rilikni fosh etadi va adolatni tiklab, eng yuksak sharafga erishadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 17,
+      "chaptersCount": 2
+    },
+    {
+      "bookId": "thamarat-al-khilaf",
+      "titleAr": "ثمرة الخلاف",
+      "titleAr_harakat": "ثَمَرَةُ الْخِلافِ",
+      "titleUz": "Janjal mevasi",
+      "summaryUz": "Samir va Marvon ismli ikki aka-uka doim janjallashardi. Bir kuni qo'shnisi Juha bir olma yordamida ularga nizoning oqibati yomon bo'lishini ko'rsatib beradi. Kitobda shu kabi ibratli yana bir hikoya ham bor.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 13,
+      "chaptersCount": 2
+    },
+    {
+      "bookId": "juha-wal-bukhala",
+      "titleAr": "جحا والبخلاء",
+      "titleAr_harakat": "جُحَا وَالْبُخَلَاءُ",
+      "titleUz": "Juha va Baxillar",
+      "summaryUz": "Bir safarda Juha o‘ta ziqna va yalqov kishiga duch keladi. Juha uni mehnatga undashga harakat qiladi, ammo uddasidan chiqa olmaydi. Shunda Juha o‘zining topqirligi bilan baxilni aldab, unga esda qolarli saboq beradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 9,
+      "chaptersCount": 23
+    },
+    {
       "bookId": "al-sinjab-al-saghir",
       "titleAr": "السنجاب الصغير",
       "titleAr_harakat": "السِّنْجَابُ الصَّغِيرُ",
@@ -252,6 +516,17 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 51,
       "chaptersCount": 7
+    },
+    {
+      "bookId": "al-dajaja-al-saghira-al-hamra",
+      "titleAr": "الدجاجة الصغيرة الحمراء",
+      "titleAr_harakat": "الدَّجَاجَةُ الصَّغِيرَةُ الْحَمْراءُ",
+      "titleUz": "Kichkina Qizil Tovuq",
+      "summaryUz": "Mehnatkash qizil tovuq bug'doy topib oladi, ammo uning dangasa do'stlari kurka va o'rdak unga yordam berishdan bosh tortadi. Tovuq bir o'zi non yopadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 12,
+      "chaptersCount": 10
     },
     {
       "bookId": "al-himar-al-qari",
@@ -265,6 +540,17 @@
       "chaptersCount": 9
     },
     {
+      "bookId": "sayyad-al-ghizlan",
+      "titleAr": "صياد الغزلان",
+      "titleAr_harakat": "صَيَّادُ الْغِزْلَانِ",
+      "titleUz": "Kiyik ovchisi",
+      "summaryUz": "Kambag'al ovchi Tog' Shayxidan bitmas-tuganmas pishloq oladi, lekin buning evaziga hayvonlarni ovlamaslikka va'da berishi kerak. Ochko'zlik va va'dasini buzish unga qimmatga tushadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 7,
+      "chaptersCount": 11
+    },
+    {
       "bookId": "al-lihya-al-zarqa",
       "titleAr": "اللحية الزرقاء",
       "titleAr_harakat": "اللِّحيَةُ الزَّرْقَاءُ",
@@ -274,6 +560,28 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 11,
       "chaptersCount": 6
+    },
+    {
+      "bookId": "lawlabah-amirat-al-ghizlan",
+      "titleAr": "لولبة أميرة الغزلان",
+      "titleAr_harakat": "لَوْلَبَةُ أَمِيرَةُ الْغِزْلَانِ",
+      "titleUz": "Lavlaba — Gʻizollar malikasi",
+      "summaryUz": "Oʻrmon hayvonlari dahshatli sherning zulmidan qochib, dono malika Lavlabaga panoh izlab borishadi. Lavlaba oʻzining aql-zakovati bilan magʻrur sherni aldab, uni suvga choʻktiradi va oʻrmonga tinchlikni qaytaradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 2,
+      "chaptersCount": 1
+    },
+    {
+      "bookId": "layla-wal-dhib",
+      "titleAr": "ليلى والذئب",
+      "titleAr_harakat": "لَيْلَى وَالذِّئْبُ",
+      "titleUz": "Laylo va Bo'ri",
+      "summaryUz": "Laylo ismli qizaloq buvisinikiga kulcha olib ketayotib, o'rmonda ayyor bo'riga duch keladi. Bo'ri uni aldab, buvisining uyini bilib oladi va yovuz niyatda undan oldin manzilga shoshiladi. Bu ertak mashhur \"Qizil qalpoqcha\" ertagining Kamil Kiloniy tomonidan moslashtirilgan sharqona talqinidir.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 8,
+      "chaptersCount": 10
     },
     {
       "bookId": "al-wazir-al-sajin",
@@ -287,6 +595,17 @@
       "chaptersCount": 4
     },
     {
+      "bookId": "jadd-al-qurud",
+      "titleAr": "جد القرود",
+      "titleAr_harakat": "جَدُّ القُرُودِ",
+      "titleUz": "Maymunlar bobosi",
+      "summaryUz": "Maymunlar shohi Rubboh o‘zining ahmoqona qarori bilan barcha hayvonlarni bir-biriga dushman qilib qo‘yadi. Adolatsiz hukm natijasida u va uning avlodlari tik yurish ne'matidan mahrum bo‘ladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 12,
+      "chaptersCount": 10
+    },
+    {
       "bookId": "al-nahla-al-amila",
       "titleAr": "النحلة العاملة",
       "titleAr_harakat": "النَّحْلَة العَامِلة",
@@ -296,6 +615,17 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 20,
       "chaptersCount": 12
+    },
+    {
+      "bookId": "madinat-al-nuhas",
+      "titleAr": "مدينة النحاس",
+      "titleAr_harakat": "مدينة النحاس",
+      "titleUz": "Mis shahar",
+      "summaryUz": "Shahzoda Iqbol va uning hamrohlari boʻron tufayli adashib, sirli Mis shaharga kelib qolishadi. Bu shaharda hamma odamlar va hayvonlar mis haykallarga aylangan. Shahzoda bu jumboqni yechishga va shaharni la'natdan xalos qilishga harakat qiladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 56,
+      "chaptersCount": 7
     },
     {
       "bookId": "adwa-min-al-mawlid-al-said",
@@ -318,6 +648,39 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 8,
       "chaptersCount": 16
+    },
+    {
+      "bookId": "shabakat-al-mawt",
+      "titleAr": "شبكة الموت",
+      "titleAr_harakat": "شَبَكَةُ المَوْتِ",
+      "titleUz": "O'lim To'ri",
+      "summaryUz": "Malika Saqtri o'limi bashorat qilingan shahzoda Satyavanga turmushga chiqadi. Bir yildan so'ng o'lim xudosi Yama kelganda, malika uning ortidan ergashadi va o'z aql-zakovati bilan sevgilisining hayotini qaytarib oladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 15,
+      "chaptersCount": 3
+    },
+    {
+      "bookId": "qadi-al-ghaba",
+      "titleAr": "قاضي الغابة",
+      "titleAr_harakat": "قَاضِي الْغَابَةِ",
+      "titleUz": "O'rmon Qozisi",
+      "summaryUz": "Ikki mushuk aka-uka Bisbis va Mishmish bir bo'lak pishloq topib olib, uni bo'lisha olmaydi. Ular o'rmon qozisi Maymun ismli maymundan yordam so'raydi, ammo ayyor qozi ularni laqillatib, pishloqni o'zi yeb qo'yadi. Bu ertak janjalning oqibati haqida hikoya qiladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 11,
+      "chaptersCount": 14
+    },
+    {
+      "bookId": "safrout-al-hattab",
+      "titleAr": "سفروت الحطاب",
+      "titleAr_harakat": "سَفْرُوتُ الْحَطَّابُ",
+      "titleUz": "O'tinchi Safrout",
+      "summaryUz": "O'tinchi Safrout — yetim, ammo halol va mehnatkash yigit. U sehrgar sinovidan o'tib, sehrli uzukka ega bo'ladi. Malika kasal bo'lganda, Safrout uzuk yordamida hayvonlarga aylanib, olis tog'dan dori olib keladi va o'z jasorati uchun mukofotlanadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 4,
+      "chaptersCount": 1
     },
     {
       "bookId": "usrat-al-sanajib",
@@ -353,6 +716,17 @@
       "chaptersCount": 10
     },
     {
+      "bookId": "safirat-al-qamar",
+      "titleAr": "سفيرة القمر",
+      "titleAr_harakat": "سَفِيرَةُ القَمَرِ",
+      "titleUz": "Oy Elchisi",
+      "summaryUz": "Dono quyon Safsofa o'zining vodiysini bosqinchi fillardan himoya qilish uchun ajoyib reja tuzadi. U o'zini Oy elchisi deb tanishtirib, fillarni Oyning g'azabidan qo'rqitadi va ularni ayyorlik bilan quvib chiqaradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 14,
+      "chaptersCount": 2
+    },
+    {
       "bookId": "arnab-fi-al-qamar",
       "titleAr": "أرنب في القمر",
       "titleAr_harakat": "أَرْنَبٌ فِي الْقَمَرِ",
@@ -362,6 +736,39 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 10,
       "chaptersCount": 13
+    },
+    {
+      "bookId": "jabbara-al-ghaba",
+      "titleAr": "جبارة الغابة",
+      "titleAr_harakat": "جَبَّارَةُ الْغَابَةِ",
+      "titleUz": "Oʻrmon Devqomati",
+      "summaryUz": "Qadimiy va qudratli eman daraxti — Oʻrmon Devqomati — kuchli boʻrondan soʻng qulaydi. Oʻrmon jonivorlari uning uchun aza tutishadi. Shunda keksa hakka daraxtning kichik yongʻoqdan ulkan himoyachiga aylanishi haqidagi butun hayotiy hikoyasini soʻzlab beradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 22,
+      "chaptersCount": 16
+    },
+    {
+      "bookId": "afareet-al-lusus",
+      "titleAr": "عفاريت اللصوص",
+      "titleAr_harakat": "عَفَارِيتُ اللُّصُوصِ",
+      "titleUz": "O‘g‘rilarning sharpalari",
+      "summaryUz": "Egalari haydab yuborgan keksa eshak, it, mushuk va xo‘roz o‘rmonda uchrashib qolishadi. Ular o‘g‘rilarning uyini topib, o‘zlarini sharpadek tutib, qaroqchilarni qo‘rqitib yuboradilar va yangi uyda baxtli yashaydilar.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 6,
+      "chaptersCount": 13
+    },
+    {
+      "bookId": "shamshun-al-jabbar",
+      "titleAr": "شمشون الجبار",
+      "titleAr_harakat": "شَمْشُونُ الْجَبَّارُ",
+      "titleUz": "Pahlavon Shamshun",
+      "summaryUz": "Pahlavon Shamshun o'zining g'ayrioddiy kuchi bilan mashhur edi. U yovvoyi hayvonlarni yengib, odamlarni qutqarardi. Ammo makkora Dalila uning kuchining sirini bilib olib, unga xiyonat qiladi. G'azabga to'lgan Shamshun o'z dushmanlaridan qasos oladi, lekin bu qasosning oqibati fojiali yakunlanadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 3,
+      "chaptersCount": 1
     },
     {
       "bookId": "al-arnab-al-asi",
@@ -384,6 +791,28 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 43,
       "chaptersCount": 6
+    },
+    {
+      "bookId": "shadaid-wa-azamat",
+      "titleAr": "شدائد وأزمات",
+      "titleAr_harakat": "شَدَائِدُ وَأَزَمَاتٌ",
+      "titleUz": "Qiyinchiliklar va Sinovlar",
+      "summaryUz": "Ushbu kitob Payg‘ambarimiz Muhammad (s.a.v.) va ilk musulmonlarning Makkadagi hayotida duch kelgan og‘ir sinovlari haqida hikoya qiladi. Asar suhbat tarzida qurilgan bo‘lib, Islomga da’vatning oshkora boshlanishi, Quraysh qabilasining boykoti, Abu Tolib va Xadicha onamizning vafoti kabi voqealarni o‘z ichiga oladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 11,
+      "chaptersCount": 12
+    },
+    {
+      "bookId": "abd-allah-al-barri-wa-abd-allah-al-bahri",
+      "titleAr": "عبد الله البري وعبد الله البحري",
+      "titleAr_harakat": "عَبْدُ اللهِ البَرِّي وَعَبْدُ اللهِ البَحري",
+      "titleUz": "Quruqlik Abdullohi va Dengiz Abdullohi",
+      "summaryUz": "Kambag'al baliqchi Abdulloh o'n nafar farzandini boqish uchun qiynaladi. Bir kuni u dengiz odami, o'zining adashi Abdullohni tutib oladi. Ularning do'stligi ikkisining ham hayotini o'zgartirib yuboradi va sadoqat, halollik hamda g'ayrioddiy sarguzashtlarga boy voqealarga sabab bo'ladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 12,
+      "chaptersCount": 14
     },
     {
       "bookId": "al-arnab-wa-al-sayyad",
@@ -419,6 +848,28 @@
       "chaptersCount": 20
     },
     {
+      "bookId": "zahrat-al-barsim",
+      "titleAr": "زهرة البرسيم",
+      "titleAr_harakat": "زَهْرَةُ الْبِرْسِيمِ",
+      "titleUz": "Sebarga Guli",
+      "summaryUz": "Sebarga Guli — itoatkor va mehribon quyoncha haqida ertak. U kasal onasiga g'amxo'rlik qilish uchun o'rmonga sayrdan voz kechadi. Buning evaziga onasi unga itoatsizlikning oqibatlari va ota-onaga quloq solish naqadar muhimligi haqida ibratli hikoyalarni aytib beradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 34,
+      "chaptersCount": 5
+    },
+    {
+      "bookId": "al-amir-al-mashur",
+      "titleAr": "الأمير المسحور",
+      "titleAr_harakat": "الْأَمِيرُ الْمَسْحُورُ",
+      "titleUz": "Sehrlangan Shahzoda",
+      "summaryUz": "Bir shahzoda yovuz sehrgar tomonidan ayiqqa aylantiriladi. U faqat chinakam sevgi va fidoyilik orqali o'zining asl qiyofasiga qaytishi mumkin.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 12,
+      "chaptersCount": 2
+    },
+    {
       "bookId": "al-ulba-al-mashura",
       "titleAr": "العلبة المسحورة",
       "titleAr_harakat": "الْعُلْبَةُ الْمَسْحُورَةُ",
@@ -446,6 +897,28 @@
       "titleAr_harakat": "الْأَمِيرُ مِشْمِش",
       "titleUz": "Shahzoda O'rik",
       "summaryUz": "Ikki ochko'z akasidan farqli o'laroq, mehribon Ramin sehrlangan shahzoda O'rikka yordam beradi. Shahzoda unga tog' cho'qqisiga chiqib, daryoga suv tomizsa, xazina topishini aytadi. Akalari ochko'zlik qilib yo'lda adashadi, Ramin esa yo'lda uchragan jonzotlarga yordam berib, sinovdan o'tadi va mukofotlanadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 5,
+      "chaptersCount": 1
+    },
+    {
+      "bookId": "kanz-al-shamardal",
+      "titleAr": "كنز الشمردل",
+      "titleAr_harakat": "كَنْزُ الشَّمَرْدَلِ",
+      "titleUz": "Shamardal Xazinasi",
+      "summaryUz": "Sodiq va mehnatkash yigit Jobir, xoin akalaridan farqli o'laroq, oilasini boqish uchun baliqchilik qiladi. Bir kuni u sehrgarga yordam berib, Shamardal xazinasini ochish kaliti o'zi ekanligini bilib qoladi. Xazinaga yetishish uchun Jobir g'ayritabiiy sinovlardan o'tishi va o'z onasi qiyofasidagi yovuz shaytonni ham yengishi kerak bo'ladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 34,
+      "chaptersCount": 2
+    },
+    {
+      "bookId": "shantah-wa-saydah",
+      "titleAr": "شنطح وصيدح",
+      "titleAr_harakat": "شَنْطَحُ وصَيْدَحُ",
+      "titleUz": "Shantah va Saydah",
+      "summaryUz": "Ikki aka-uka Shantah va Saydah haqida ertak. Omadli akasiga hasad qilgan Saydah o'z baxtini izlab, Baxt tog'iga yo'l oladi. U yerda uxlab yotgan baxtini uyg'otib, nafaqat o'ziga, balki yo'lda uchragan boshqalarga ham yordam beradi.",
       "author": "كامل كيلاني",
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 5,
@@ -485,6 +958,28 @@
       "chaptersCount": 6
     },
     {
+      "bookId": "risalat-al-hana",
+      "titleAr": "رسالة الهناء",
+      "titleAr_harakat": "رِسَالَةُ الْهَنَاءِ",
+      "titleUz": "Tabriknoma",
+      "summaryUz": "Shoir Abu-l-A'lo al-Ma'arriyning tabrik maktubi. Kitobda Komil Kiloniyning asarga sharhi, shoirning o'z izohlari va matnning to'liq tahlili keltirilgan.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 106,
+      "chaptersCount": 4
+    },
+    {
+      "bookId": "hizaa-al-tanburi",
+      "titleAr": "حذاء الطنبوري",
+      "titleAr_harakat": "حِذَاءُ الطُّنْبُورِيِّ",
+      "titleUz": "Tanburiyning Chorig'i",
+      "summaryUz": "Bag‘dodlik baxil savdogar Tanburiy o‘zining eski chorig‘idan qutulishga harakat qiladi. Ammo choriq g‘ayritabiiy tarzda unga qaytib kelaverib, birin-ketin kulgili va ayanchli ko‘rgiliklarga sabab bo‘ladi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 14,
+      "chaptersCount": 30
+    },
+    {
       "bookId": "al-shamadan-al-hadidi",
       "titleAr": "الشمعدان الحديدي",
       "titleAr_harakat": "الشَّمْعَدانُ الْحَدِيدِيُّ",
@@ -494,6 +989,50 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 14,
       "chaptersCount": 18
+    },
+    {
+      "bookId": "luluat-al-sabah",
+      "titleAr": "لؤلؤة الصباح",
+      "titleAr_harakat": "لُؤْلُؤَةُ الصَّبَاحِ",
+      "titleUz": "Tong Marvaridi",
+      "summaryUz": "Qoracha qiz Tong Marvaridi oq tanli bo'lishni orzu qilib, afsonaviy daryoni izlab sarguzashtga otlanadi. U bu safarda haqiqiy go'zallik terining rangida emas, balki pok qalbda ekanligini anglab yetadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 11,
+      "chaptersCount": 14
+    },
+    {
+      "bookId": "qissatun-la-tantahi",
+      "titleAr": "قصة لا تنتهي",
+      "titleAr_harakat": "قِصَّةٌ لَا تَنْتَهي",
+      "titleUz": "Tugamaydigan ertak",
+      "summaryUz": "Ertaklarni xush ko‘radigan podshoh tugamaydigan ertak aytib bergan kishiga katta mukofot va’da qiladi. Ko‘plab ertakchilar bu vazifani uddalay olmaydi. Shunda topqir Juha podshohga g‘aroyib ertak aytib beradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 13,
+      "chaptersCount": 4
+    },
+    {
+      "bookId": "mughamarat-thalab",
+      "titleAr": "مغامرات ثعلب",
+      "titleAr_harakat": "مُغَامَرَاتُ ثَعْلَب",
+      "titleUz": "Tulki sarguzashtlari",
+      "summaryUz": "Ayyor tulki kuchli, ammo xudbin sher bilan do'stlashadi. Aldanganini bilgach, o'z aqliga ishonishni o'rganadi va baliq to'la aravani qo'lga kiritish uchun sirtlonni laqillatadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 9,
+      "chaptersCount": 10
+    },
+    {
+      "bookId": "habbat-al-tut",
+      "titleAr": "حبة التوت",
+      "titleAr_harakat": "حَبَّةُ التَّوتِ",
+      "titleUz": "Tut donasi",
+      "summaryUz": "Ona tovuq Kiki o'g'li Kuku katta tut donasiga tiqilib qolganida uni qutqarish uchun uzoq safarga otlanadi. U yordam so'rab suvga, daraxtga, qizchaga va boshqalarga murojaat qiladi, lekin har biri evaziga nimadir so'raydi. Bu ona mehrining cheksizligi va o'zaro yordam haqidagi ibratli ertak.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 14,
+      "chaptersCount": 12
     },
     {
       "bookId": "al-asad-al-tair",
@@ -507,6 +1046,94 @@
       "chaptersCount": 10
     },
     {
+      "bookId": "hisan-al-jaww",
+      "titleAr": "حصان الجو",
+      "titleAr_harakat": "حِصَانُ الْجَوِّ",
+      "titleUz": "Uchar ot",
+      "summaryUz": "Shahzoda Feruzshohga to‘y sovg‘asi sifatida sehrli uchar ot hadya qilinadi. Ammo bu raqib podshohning hiylasi bo‘lib chiqadi. Shahzoda otni boshqarishni o‘rganib, o‘zining jasorati va topqirligi bilan malika Nurulhayotni qutqaradi va dushmanlarini yengadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 19,
+      "chaptersCount": 13
+    },
+    {
+      "bookId": "al-ghurab-al-tair",
+      "titleAr": "الغراب الطائر",
+      "titleAr_harakat": "الْغُرَابُ الطَّائِرُ",
+      "titleUz": "Uchar Qarg'a",
+      "summaryUz": "Ikki hikoyadan iborat to'plam. Birinchisi mish-mishlar qanday tarqalishi va o'zgarishi haqida, ikkinchisi esa sir saqlashning qiyinligi haqida.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 12,
+      "chaptersCount": 2
+    },
+    {
+      "bookId": "mukhatarat-umm-mazin",
+      "titleAr": "مخاطرات أم مازن",
+      "titleAr_harakat": "مُخاطَرَاتُ أُمِّ مازن",
+      "titleUz": "Ummu Mozinning sarguzashtlari",
+      "summaryUz": "Yoshgina chumoli Ummu Mozin bo'ron tufayli o'z inidan adashib qoladi. U bug'doyzorga panoh topib, sichqonlar oilasi bilan tanishadi, so'ngra olxo'ri ichida odamlar uyiga tushib qoladi. U yerdan qochib, o'z koloniyasiga dushman chumolilar hujum qilayotganini ko'radi va jasorat bilan jangga kirishadi. Urushdan so'ng, u o'zi topgan yangi, xavfsiz joyga ko'chishni taklif qiladi va donoligi uchun yangi koloniyaning me'mori etib tayinlanadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 39,
+      "chaptersCount": 27
+    },
+    {
+      "bookId": "unqud-al-inab",
+      "titleAr": "عنقود العنب",
+      "titleAr_harakat": "عُنْقُودُ الْعِنَبِ",
+      "titleUz": "Uzum boshi",
+      "summaryUz": "Saidning baxtli oilasi o'z bog'ida birinchi uzum boshini yetishtiradi. Bu kichik uzum boshi butun oila a'zolarining bir-biriga bo'lgan mehr-muhabbatini va fidoiyligini sinovdan o'tkazadigan ajoyib sarguzashtga aylanadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 9,
+      "chaptersCount": 10
+    },
+    {
+      "bookId": "shahrazad-bint-al-wazir",
+      "titleAr": "شهرزاد بنت الوزير",
+      "titleAr_harakat": "شَهْرَزَادُ بِنْتُ الْوَزِيرِ",
+      "titleUz": "Vazirning qizi Shahrizoda",
+      "summaryUz": "Xotini xiyonatidan soʻng shafqatsizga aylangan podshoh Shahriyorni toʻxtatish uchun vazirning dono qizi Shahrizoda oʻzini qurbon qiladi va unga ming bir kecha ertak aytib beradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 16,
+      "chaptersCount": 23
+    },
+    {
+      "bookId": "tajir-al-bunduqiyya",
+      "titleAr": "تاجر البندقية",
+      "titleAr_harakat": "تَاجِرُ الْبُنْدُقِيَّةِ",
+      "titleUz": "Venedik savdogari",
+      "summaryUz": "Yosh Bassanio sevgilisi Portiyaning qo'lini so'rash uchun do'sti, savdogar Antoniodan qarz oladi. Antonio esa pulni zolim sudxo'r Shaylokdan, garovga o'z tanasidan bir funt go'sht qo'yish sharti bilan oladi. Kutilmaganda Antonio qarzni qaytara olmay qolganda, do'stlik va adolat sinovdan o'tadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 37,
+      "chaptersCount": 6
+    },
+    {
+      "bookId": "ghazalat-al-wadi",
+      "titleAr": "غزالة الوادي",
+      "titleAr_harakat": "غَزَالَةُ الْوَادِي",
+      "titleUz": "Vodiylik G'azal",
+      "summaryUz": "Bir paytlar vodiylik g'azallar tinch-totuv yashashardi. Ammo och arslon paydo bo'lib, ulardan har kuni birini talab qila boshladi. Bir jasur g'azalcha hiyla ishlatib, zolim arslonni o'z aksiga qarshi jangga chorlaydi va barchani qutqaradi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 8,
+      "chaptersCount": 8
+    },
+    {
+      "bookId": "muallim-al-nubah",
+      "titleAr": "معلم النباح",
+      "titleAr_harakat": "مُعَلِّمِ النُّبَاحِ",
+      "titleUz": "Vovillash muallimi",
+      "summaryUz": "Qarzlaridan qochish uchun bir kishiga itdek vovillashni o'rgatgan ustozning o'zi ham shogirdining qurboniga aylanadi. Bu ayyorlik va xiyonat haqidagi kulgili, ammo ibratli hikoya.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 18,
+      "chaptersCount": 3
+    },
+    {
       "bookId": "al-ankab-al-hazin",
       "titleAr": "العنكب الحزين",
       "titleAr_harakat": "الْعَنْكَبُ الْحَزِينُ",
@@ -518,6 +1145,39 @@
       "chaptersCount": 16
     },
     {
+      "bookId": "habib-al-shaab",
+      "titleAr": "حبيب الشعب",
+      "titleAr_harakat": "حَبِيبُ الشَّعْبِ",
+      "titleUz": "Xalqning Sevimlisi",
+      "summaryUz": "Jasur yigit Faris o'z xalqini dahshatli uch boshli ajdarhodan qutqarishga qaror qiladi. Bu yo'lda unga sehrli qanotli ot yordam beradi. Ular birgalikda xavfli sarguzashtlarga otlanadilar.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 29,
+      "chaptersCount": 5
+    },
+    {
+      "bookId": "khatim-al-dhikra",
+      "titleAr": "خاتم الذكرى",
+      "titleAr_harakat": "خَاتَمُ الذِّكْرَى",
+      "titleUz": "Xotira uzugi",
+      "summaryUz": "Shoh Dushyanta o‘rmonda go‘zal Shakuntalani sevib qoladi va unga xotira uzugini beradi. Ammo donishmandning la’nati tufayli shoh uni unutadi. Yillar o‘tib, yo‘qolgan uzuk topilgach, shohning xotirasi tiklanadi va u sevgilisini izlab yo‘lga chiqadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 14,
+      "chaptersCount": 3
+    },
+    {
+      "bookId": "khusrawshah",
+      "titleAr": "خسروشاه",
+      "titleAr_harakat": "خُسْرَوْشَاهُ",
+      "titleUz": "Xusravshoh",
+      "summaryUz": "Fors shahzodasi Xusravshohning sarguzashtlari. U qaroqchilar hujumiga uchrab, adashib qoladi va sehrli olamga duch keladi. Jin tomonidan maymunga aylantirilgan shahzoda o'z qiyofasini qaytarish uchun ko'p sinovlardan o'tadi.",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 11,
+      "chaptersCount": 20
+    },
+    {
       "bookId": "al-bayt-al-jadid",
       "titleAr": "البيت الجديد",
       "titleAr_harakat": "الْبَيْتُ الْجَدِيدُ",
@@ -527,6 +1187,17 @@
       "publisher": "مؤسسة هنداوي",
       "readingMinutes": 5,
       "chaptersCount": 8
+    },
+    {
+      "bookId": "rayhan-al-kadhdhab",
+      "titleAr": "ريحان الكذاب",
+      "titleAr_harakat": "رَيْحَانُ الْكَذَّابُ",
+      "titleUz": "Yolg'onchi Rayhon",
+      "summaryUz": "Bir olma tufayli xotinini o'ldirib qo'ydim deb o'ylagan yigit, jinoyatini yashirishga urinadi. Ammo Yolg'onchi Rayhonning aralashuvi bilan barcha sirlar fosh bo'ladi. Xo'sh, aslida nima bo'lgan edi?",
+      "author": "كامل كيلاني",
+      "publisher": "مؤسسة هنداوي",
+      "readingMinutes": 6,
+      "chaptersCount": 1
     },
     {
       "bookId": "al-dik-al-zarif",
