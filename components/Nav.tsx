@@ -18,6 +18,9 @@ export function Nav() {
         <Link href="/maqolalar" className="text-sm font-medium text-muted">
           Maqolalar
         </Link>
+        <Link href="/hikoyalar" className="text-sm font-medium text-muted">
+          Hikoyalar
+        </Link>
         <a href="#faq" className="text-sm font-medium text-muted">
           FAQ
         </a>
