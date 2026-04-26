@@ -73,11 +73,18 @@ export async function GET(req: NextRequest) {
     return fail(state, "token_exchange_error", (e as Error).message);
   }
 
+  // Telegram returns 200 with {"error": "..."} on auth failures (non-standard).
+  if (typeof tokenJson.error === "string") {
+    const desc = (tokenJson.error_description as string | undefined) ?? "";
+    console.error("[telegram-cb] token endpoint error:", tokenJson.error, desc);
+    return fail(state, `tg_${tokenJson.error}`, desc || rawTokenText.slice(0, 200));
+  }
+
   const idToken = tokenJson.id_token;
   if (!idToken) {
     console.error("[telegram-cb] id_token missing. raw response:", rawTokenText.slice(0, 500));
     const keys = Object.keys(tokenJson).join(",");
-    return fail(state, "no_id_token", `keys=[${keys}]`);
+    return fail(state, "no_id_token", `keys=[${keys}] body=${rawTokenText.slice(0, 200)}`);
   }
 
   let claims: Record<string, unknown>;
