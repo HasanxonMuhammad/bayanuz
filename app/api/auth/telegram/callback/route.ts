@@ -39,7 +39,8 @@ export async function GET(req: NextRequest) {
     return fail(state, "server_misconfig", "telegram env vars missing");
   }
 
-  let tokenJson: { id_token?: string; access_token?: string };
+  let tokenJson: { id_token?: string; access_token?: string; [k: string]: unknown };
+  let rawTokenText = "";
   try {
     const body = new URLSearchParams({
       grant_type: "authorization_code",
@@ -50,20 +51,34 @@ export async function GET(req: NextRequest) {
     });
     const res = await fetch(TELEGRAM_TOKEN_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        Accept: "application/json",
+      },
       body,
     });
+    rawTokenText = await res.text();
     if (!res.ok) {
-      const text = await res.text();
-      return fail(state, "token_exchange_failed", `${res.status}: ${text.slice(0, 200)}`);
+      console.error("[telegram-cb] token exchange failed", res.status, rawTokenText);
+      return fail(state, "token_exchange_failed", `${res.status}: ${rawTokenText.slice(0, 200)}`);
     }
-    tokenJson = await res.json();
+    try {
+      tokenJson = JSON.parse(rawTokenText);
+    } catch {
+      console.error("[telegram-cb] token response is not JSON:", rawTokenText.slice(0, 500));
+      return fail(state, "token_not_json", rawTokenText.slice(0, 200));
+    }
+    console.log("[telegram-cb] token keys:", Object.keys(tokenJson));
   } catch (e) {
     return fail(state, "token_exchange_error", (e as Error).message);
   }
 
   const idToken = tokenJson.id_token;
-  if (!idToken) return fail(state, "no_id_token", "id_token missing in token response");
+  if (!idToken) {
+    console.error("[telegram-cb] id_token missing. raw response:", rawTokenText.slice(0, 500));
+    const keys = Object.keys(tokenJson).join(",");
+    return fail(state, "no_id_token", `keys=[${keys}]`);
+  }
 
   let claims: Record<string, unknown>;
   try {
