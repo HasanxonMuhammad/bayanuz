@@ -51,23 +51,26 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 text-[12px] font-medium text-[#7A9A80]">
           <span>© 2026 BAYAN · Barcha huquqlar himoyalangan</span>
           <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
-            <a
-              href="https://app.notion.com/p/Foydalanish-shartlari-34ca2551bb1b80c08653ccfa4daec9e2"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/terms-of-service"
               className="hover:text-white transition-colors"
             >
               Foydalanish shartlari
-            </a>
+            </Link>
             <span className="text-forest-soft">·</span>
-            <a
-              href="https://app.notion.com/p/Bayan-Maxfiylik-siyosati-34ca2551bb1b80b687ace7ac929557e1"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/privacy-policy"
               className="hover:text-white transition-colors"
             >
               Maxfiylik siyosati
-            </a>
+            </Link>
+            <span className="text-forest-soft">·</span>
+            <Link
+              href="/account-deletion"
+              className="hover:text-white transition-colors"
+            >
+              Akkauntni o&apos;chirish
+            </Link>
           </span>
         </div>
       </div>
