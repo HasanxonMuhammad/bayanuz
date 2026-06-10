@@ -133,6 +133,23 @@ export function readWebhookFromForm(
   };
 }
 
+/// Click webhook'larini ikki shaklda yuborishi mumkin: POST + form data, yoki
+/// GET + query string. Ikkalasini ham qabul qilamiz va bir xil tahlil qilamiz.
+export async function readWebhook(
+  req: Request,
+): Promise<ClickWebhookPayload> {
+  if (req.method === "POST") {
+    try {
+      const form = await req.formData();
+      return readWebhookFromForm(form);
+    } catch {
+      // POST'ni form sifatida o'qiy olmasak — URL params'ga o'tamiz
+    }
+  }
+  const url = new URL(req.url);
+  return readWebhookFromForm(url.searchParams);
+}
+
 export function expiryFor(plan: "monthly" | "yearly"): number {
   const now = new Date();
   if (plan === "yearly") {

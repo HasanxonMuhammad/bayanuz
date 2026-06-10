@@ -4,7 +4,7 @@ import { adminDb } from "@/lib/firebase-admin";
 import {
   ClickError,
   parseMerchantTransId,
-  readWebhookFromForm,
+  readWebhook,
   verifyPrepareSign,
 } from "@/lib/click";
 
@@ -18,7 +18,18 @@ export const dynamic = "force-dynamic";
 /// 2) `merchant_trans_id`ni parse qilamiz (uid, plan yoki donation).
 /// 3) Firestore'ga "pending" yozuvni qo'shamiz va `merchant_prepare_id`ni qaytaramiz.
 /// 4) Idempotent: Click ikkinchi marta yuborsa, eski prepare_id qaytadi.
+///
+/// Click webhook'ni GET (URL params) yoki POST (form data) bilan yuborishi
+/// mumkin — ikkalasi ham bir xil ishlanadi.
+export async function GET(req: NextRequest) {
+  return handle(req);
+}
+
 export async function POST(req: NextRequest) {
+  return handle(req);
+}
+
+async function handle(req: NextRequest) {
   const secret = process.env.CLICK_SECRET_KEY;
   const serviceId = process.env.CLICK_SERVICE_ID ?? "104874";
   if (!secret) {
@@ -31,8 +42,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const form = await req.formData();
-  const payload = readWebhookFromForm(form);
+  const payload = await readWebhook(req);
 
   if (payload.service_id !== serviceId) {
     return NextResponse.json(
