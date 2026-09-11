@@ -18,7 +18,7 @@ export async function generateMetadata({
   const book = getBook(bookId);
   if (!book) return { title: "Hikoya topilmadi" };
   return {
-    title: `${book.titleUz} · Komil Kiloniy · BAYAN`,
+    title: `${book.titleUz || book.titleAr} · Komil Kiloniy`,
     description: book.summaryUz,
     openGraph: {
       title: `${book.titleAr} — ${book.author}`,

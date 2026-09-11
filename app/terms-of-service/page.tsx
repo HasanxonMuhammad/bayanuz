@@ -3,7 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Foydalanish shartlari — BAYAN",
+  title: "Foydalanish shartlari",
   description:
     "BAYAN — Arabcha-O'zbekcha lug'at ilovasidan foydalanish qoidalari va shartlari.",
   robots: { index: true, follow: true },

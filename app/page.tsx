@@ -1,7 +1,7 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
-import { VideoCta } from "@/components/VideoCta";
+import { DownloadSection } from "@/components/DownloadSection";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { LatestNews } from "@/components/LatestNews";
@@ -14,7 +14,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Features />
-      <VideoCta />
+      <DownloadSection />
       <Testimonials />
       <FAQ />
       <LatestNews />

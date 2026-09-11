@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { TELEGRAM_URL } from "@/lib/links";
 
 interface QA {
   q: string;
@@ -12,12 +13,12 @@ const qas: QA[] = [
     a: "Ha, ilovaning asosiy qismi (lug'at, maqol-hikmat, fe'l tuslanishi) internet talab qilmaydi. Faqat yuklab olishda internet kerak.",
   },
   {
-    q: "iPhone uchun versiyasi qachon chiqadi?",
-    a: "Hozir Android versiyasi chop etilgan. iOS versiyasi 2026 yilning ikkinchi yarmida chiqarilishi rejalashtirilgan.",
+    q: "iPhone uchun versiyasi bormi?",
+    a: "Ha! BAYAN App Store'da ham, Google Play'da ham mavjud. Yuqoridagi tugmalar yoki QR kod orqali o'z qurilmangizga mos versiyani yuklab oling.",
   },
   {
     q: "Ilovadan foydalanish pullikmi?",
-    a: "Yo'q, BAYAN butunlay bepul. Reklamalar yo'q, maxfiy to'lov tizimi yo'q.",
+    a: "Yo'q, BAYAN bepul. Reklamalar yo'q, yashirin to'lovlar yo'q. Qo'shimcha imkoniyatlar uchun ixtiyoriy Premium mavjud.",
   },
   {
     q: "Maqolalar qaysi manbalardan olinadi?",
@@ -27,13 +28,17 @@ const qas: QA[] = [
     q: "Lotin va kirill ikkalasi ishlaydimi?",
     a: "Ha, qidiruv har ikkala yozuvni tushunadi. Sozlamalardan yozuvni tanlash mumkin.",
   },
+  {
+    q: "Qanday qurilmalarda ishlaydi?",
+    a: "iPhone va iPad (iOS 14 va undan yuqori), Android telefon va planshetlar. Ikkala versiya bir xil lug'at bazasidan foydalanadi.",
+  },
 ];
 
 export function FAQ() {
   const [open, setOpen] = useState(0);
   return (
     <section id="faq" className="w-full px-6 lg:px-16 py-24 bg-cream">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-[440px_1fr] gap-20">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-[440px_1fr] gap-12 lg:gap-20 min-w-0-children">
         <div className="flex flex-col gap-5">
           <span className="inline-flex px-4 py-2 bg-blue-soft rounded-full w-fit">
             <span className="text-[11px] font-bold tracking-[2.2px] text-blue">
@@ -41,7 +46,7 @@ export function FAQ() {
             </span>
           </span>
           <h2
-            className="text-[48px] lg:text-[52px] leading-[1.1] font-medium text-forest tracking-[-0.025em]"
+            className="text-[36px] sm:text-[48px] lg:text-[52px] leading-[1.1] font-medium text-forest tracking-[-0.025em]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Savollar va
@@ -54,7 +59,7 @@ export function FAQ() {
             yozing.
           </p>
           <a
-            href="https://t.me/mudarrisblog"
+            href={TELEGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-5 py-3 bg-white rounded-full border border-border-2 hover:-translate-y-0.5 transition-transform w-fit"

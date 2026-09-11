@@ -29,6 +29,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+h1, h2, h3 {
+  overflow-wrap: anywhere;
+}
+
+/* Grid/flex children must be allowed to shrink below their content width */
+.min-w-0-children > * {
+  min-width: 0;
 }
 
 body {

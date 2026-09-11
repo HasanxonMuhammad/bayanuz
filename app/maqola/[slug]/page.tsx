@@ -17,12 +17,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = getArticleBySlug(slug);
   if (!article) return { title: "Maqola topilmadi" };
+  const title = article.titleUz || article.titleAr;
+  const description =
+    article.heroSubtitle ||
+    `${article.categoryNameUz} bo'yicha maqola — ${article.authorName}. BAYAN ilovasi: Arabcha-O'zbekcha lug'at.`;
   return {
-    title: `${article.titleUz} · BAYAN`,
-    description: article.heroSubtitle,
+    title,
+    description,
+    alternates: { canonical: `/maqola/${article.slug}` },
     openGraph: {
-      title: article.titleUz,
-      description: article.heroSubtitle,
+      title,
+      description,
       type: "article",
       publishedTime: article.publishedAt,
       authors: [article.authorName],
@@ -31,14 +36,14 @@ export async function generateMetadata({
           url: article.coverImage,
           width: 1200,
           height: 630,
-          alt: article.titleUz,
+          alt: title,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: article.titleUz,
-      description: article.heroSubtitle,
+      title,
+      description,
       images: [article.coverImage],
     },
   };

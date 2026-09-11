@@ -46,10 +46,10 @@ export function Testimonials() {
             </span>
           </span>
           <h2
-            className="text-[40px] lg:text-[44px] leading-[1.2] font-medium text-forest tracking-[-0.02em] max-w-3xl"
+            className="text-[32px] sm:text-[40px] lg:text-[44px] leading-[1.2] font-medium text-forest tracking-[-0.02em] max-w-3xl"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            O&apos;zbekistonning har burchagi —
+            O&apos;zbekistonning har burchagi —{" "}
             <br className="hidden lg:block" />
             BAYAN bilan bir ritmda
           </h2>

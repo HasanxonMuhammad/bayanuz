@@ -3,7 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Maxfiylik siyosati — BAYAN",
+  title: "Maxfiylik siyosati",
   description:
     "BAYAN — Arabcha-O'zbekcha lug'at ilovasining maxfiylik siyosati. Qanday ma'lumotlar yig'iladi, qanday ishlatiladi va himoya qilinadi.",
   robots: { index: true, follow: true },

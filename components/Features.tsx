@@ -30,7 +30,7 @@ function Feature({
   return (
     <section className="w-full py-16 lg:py-20" style={{ background: bg }}>
       <div
-        className={`max-w-7xl mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center ${
+        className={`max-w-7xl mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center min-w-0-children ${
           reverse ? "lg:[&>*:first-child]:order-2" : ""
         }`}
       >
@@ -48,7 +48,7 @@ function Feature({
             </span>
           </div>
           <h2
-            className="text-[44px] lg:text-[48px] leading-[1.1] font-medium text-forest tracking-[-0.02em]"
+            className="text-[34px] sm:text-[44px] lg:text-[48px] leading-[1.1] font-medium text-forest tracking-[-0.02em]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {title}
@@ -74,7 +74,7 @@ export function Features() {
             </span>
           </div>
           <h2
-            className="text-[44px] lg:text-[56px] leading-[1.1] font-medium text-forest tracking-[-0.025em]"
+            className="text-[34px] sm:text-[44px] lg:text-[56px] leading-[1.1] font-medium text-forest tracking-[-0.025em]"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Bitta ilovada — butun arab tili

@@ -3,7 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Akkauntni o'chirish — BAYAN",
+  title: "Akkauntni o'chirish",
   description:
     "BAYAN — Arabcha-O'zbekcha lug'at ilovasidagi akkauntingizni va u bilan bog'liq ma'lumotlarni o'chirish bo'yicha ko'rsatma.",
   robots: { index: true, follow: true },

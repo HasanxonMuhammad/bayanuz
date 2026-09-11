@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import type { Metadata } from "next";
 import { articles } from "@/lib/articles";
+
+export const metadata: Metadata = {
+  title: "Maqolalar",
+  description:
+    "Arab tili grammatikasi, sarf, balag'a va imlo bo'yicha ilmiy maqolalar — «باحثو اللغة العربية» jamoasidan rasmiy ruxsat asosida, BAYAN ilovasida.",
+  alternates: { canonical: "/maqolalar" },
+};
 
 export default function MaqolalarPage() {
   return (
@@ -16,7 +24,7 @@ export default function MaqolalarPage() {
               </span>
             </span>
             <h1
-              className="text-[48px] lg:text-[60px] leading-[1.05] font-medium text-forest tracking-[-0.03em]"
+              className="text-[38px] sm:text-[48px] lg:text-[60px] leading-[1.05] font-medium text-forest tracking-[-0.03em]"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Arab tili bo&apos;yicha
@@ -95,12 +103,14 @@ export default function MaqolalarPage() {
                 >
                   {a.titleAr}
                 </h2>
-                <p
-                  className="italic text-base text-muted leading-[1.45]"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  {a.titleUz}
-                </p>
+                {a.titleUz && (
+                  <p
+                    className="italic text-base text-muted leading-[1.45]"
+                    style={{ fontFamily: "var(--font-display)" }}
+                  >
+                    {a.titleUz}
+                  </p>
+                )}
                 <div className="flex items-center gap-2 pt-2">
                   <span className="ar text-sm font-semibold text-muted-2">
                     {a.authorName}

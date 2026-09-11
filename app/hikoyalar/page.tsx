@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { getAllBooksMeta } from "@/lib/books";
 
 export const metadata: Metadata = {
-  title: "Hikoyalar · BAYAN",
+  title: "Hikoyalar",
   description:
     "Komil Kiloniyning arab tilidagi bolalar hikoyalari — tashkeel bilan, bobma-bob o'qish uchun.",
 };
@@ -24,7 +24,7 @@ export default function HikoyalarPage() {
               </span>
             </span>
             <h1
-              className="text-[48px] lg:text-[60px] leading-[1.05] font-medium text-forest tracking-[-0.03em]"
+              className="text-[38px] sm:text-[48px] lg:text-[60px] leading-[1.05] font-medium text-forest tracking-[-0.03em]"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Komil Kiloniy
