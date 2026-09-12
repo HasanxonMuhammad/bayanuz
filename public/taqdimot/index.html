@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="uz"><head><meta charset="utf-8">
+<title>Bayan — taqdimot</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF6EE;--ink:#15231B;--green:#0F6B48;--red:#E5473C;--gold:#E2B857;--muted:#6B7A70;--script:#B4553A;--navy:#1E3A8A;--blue:#2F6CF6;--purple:#7B3DFF;--maroon:#8a1618}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{background:#0c1410;font-family:Inter,"Helvetica Neue",Arial,sans-serif;overflow:hidden}
+#deck{position:fixed;inset:0;overflow:hidden}
+.slide{width:1920px;height:1080px;position:absolute;left:50%;top:50%;overflow:hidden;background:var(--bg);color:var(--ink);display:none;
+  transform:translate(-50%,-50%) scale(var(--k,1));transform-origin:center center;box-shadow:0 40px 120px rgba(0,0,0,.6)}
+.slide.active{display:block}
+
+/* background furniture */
+.glow{position:absolute;inset:0;background:
+  radial-gradient(900px 700px at 88% 70%, rgba(15,107,72,.12), transparent 60%),
+  radial-gradient(700px 600px at 4% 12%, rgba(229,71,60,.08), transparent 60%),
+  radial-gradient(1200px 800px at 50% 118%, rgba(180,85,58,.10), transparent 60%)}
+.wm{position:absolute;right:-40px;top:180px;font-family:Amiri,serif;font-weight:700;font-size:420px;color:var(--green);opacity:.05;line-height:1}
+.stripes{position:absolute;right:0;top:430px;width:170px;height:48px;background:repeating-linear-gradient(-60deg, rgba(180,85,58,.32) 0 3px, transparent 3px 15px)}
+.dots{position:absolute;left:88px;bottom:60px;display:grid;grid-template-columns:repeat(4,10px);gap:16px}
+.dots i{width:10px;height:10px;border-radius:50%;background:var(--green);opacity:.18}
+.dia{position:absolute;background:var(--red);transform:rotate(45deg);border-radius:3px}
+
+/* header */
+.hd{position:absolute;left:88px;top:62px;display:flex;align-items:center;gap:14px;z-index:20}
+.hd img{height:62px;mix-blend-mode:multiply}
+.hd b{font-size:24px;font-weight:800;letter-spacing:.18em}
+.num{position:absolute;right:88px;top:72px;font-size:20px;font-weight:700;color:var(--muted);letter-spacing:.08em;z-index:20}
+.num b{color:var(--green)}
+.kick{position:absolute;left:88px;top:158px;font-family:"Great Vibes",cursive;font-size:56px;color:var(--script);line-height:1}
+h2{position:absolute;left:88px;top:212px;font-size:84px;font-weight:900;letter-spacing:-.03em;line-height:1.02;max-width:1000px}
+h2 em{font-style:normal;color:var(--green)}
+.lead{position:absolute;left:90px;font-size:29px;line-height:1.4;color:var(--muted);font-weight:500;max-width:820px}
+
+/* bullets */
+.bul{position:absolute;list-style:none}
+.bul li{display:flex;gap:18px;align-items:flex-start;margin-bottom:30px;max-width:700px}
+.bul .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;color:#fff;font-size:25px;flex:none}
+.bul b{display:block;font-size:29px;font-weight:800;line-height:1.2}
+.bul span{display:block;font-size:22px;color:var(--muted);font-weight:500;margin-top:4px}
+
+/* phones */
+.ph{position:absolute;padding:12px;border-radius:58px;background:linear-gradient(145deg,#2b3a31,#0c1510 55%,#223027);
+  box-shadow:0 60px 90px -40px rgba(11,40,28,.6), 0 0 0 3px #3a4a40 inset, 0 0 0 5px #cfd6cf;
+  width:calc(var(--h) * 0.46 + 24px);height:calc(var(--h) + 24px)}
+.ph .scr{width:100%;height:100%;border-radius:47px;overflow:hidden;background:#F4F2EC}
+.ph .scr img{width:100%;display:block;margin-top:var(--off,0px)}
+.cap{position:absolute;text-align:center;font-size:23px;font-weight:800;color:var(--ink)}
+.cap span{display:block;font-size:19px;font-weight:500;color:var(--muted);margin-top:4px;font-family:Amiri,serif}
+
+/* cards */
+.card{position:absolute;background:#fff;border-radius:26px;padding:26px 28px;box-shadow:0 26px 50px -22px rgba(21,35,27,.32)}
+.stat b{display:block;font-size:46px;font-weight:900;color:var(--green);letter-spacing:-.02em;line-height:1}
+.stat i{display:block;font-style:normal;font-size:25px;font-weight:800;margin-top:6px}
+.stat span{display:block;font-size:19px;color:var(--muted);font-weight:500;margin-top:4px;line-height:1.35}
+.src{position:absolute;width:330px;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 22px 44px -22px rgba(21,35,27,.36)}
+.src .t{padding:10px 16px 9px;color:#fff;text-align:center;line-height:1.15}
+.src .t b{display:block;font-size:20px;font-weight:800;letter-spacing:.04em}
+.src .t span{font-family:Amiri,serif;font-size:18px;opacity:.95}
+.src p{padding:12px 16px 14px;font-size:18px;line-height:1.3;color:#2c3a31;font-weight:500}
+.wire{position:absolute;height:0;border-top:3px dashed rgba(15,107,72,.4)}
+.wire::after{content:'';position:absolute;top:-7px;width:11px;height:11px;border-radius:50%;background:var(--green)}
+.wire.l::after{right:-6px}.wire.r::after{left:-6px}
+
+/* books */
+.book{position:absolute;width:190px;height:262px;border-radius:4px 12px 12px 4px;
+  background:radial-gradient(circle at 55% 45%, #b8282c 0 25%, #8a1618 75%);
+  box-shadow:inset 12px 0 0 rgba(0,0,0,.28), inset 15px 0 0 rgba(255,255,255,.07), 5px 5px 0 #efe6d2, 7px 7px 0 #cbbd9c, 0 40px 60px -28px rgba(70,10,10,.7)}
+.book::before{content:'';position:absolute;inset:16px 14px 16px 26px;border:3px double var(--gold);border-radius:6px}
+.book .md{position:absolute;left:calc(50% + 6px);top:44%;transform:translate(-50%,-50%);width:100px;height:100px;border-radius:50%;
+  border:3px solid var(--gold);background:radial-gradient(#2a4fa8,#152a63);display:grid;place-items:center;color:#F3D27A;
+  font-family:Amiri,serif;font-weight:700;font-size:26px;box-shadow:0 0 0 5px rgba(226,184,87,.25)}
+.book .vol{position:absolute;bottom:38px;left:12px;right:0;text-align:center;color:var(--gold);font-size:14px;font-weight:800;letter-spacing:.14em}
+
+/* review cards */
+.rev{position:absolute;background:#fff;border-radius:26px;padding:24px 26px;box-shadow:0 26px 50px -22px rgba(21,35,27,.32);width:400px}
+.rev .top{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.av{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;font-size:19px;flex:none}
+.rev .who b{display:block;font-size:21px;font-weight:800}
+.rev .who span{font-size:15px;color:var(--muted)}
+.rev .st{margin-left:auto;background:var(--green);color:var(--gold);border-radius:999px;padding:6px 12px;font-size:16px;letter-spacing:2px}
+.rev p{font-size:20px;line-height:1.4;color:#2c3a31}
+
+/* store pills */
+.pill{display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:#fff;border-radius:20px;padding:16px 30px 16px 22px}
+.pill svg{width:36px;height:36px}
+.pill small{display:block;font-size:14px;opacity:.75;letter-spacing:.08em;text-transform:uppercase}
+.pill b{font-size:27px;font-weight:800}
+.site{font-size:38px;font-weight:900;letter-spacing:-.01em}
+.tag{font-size:24px;color:var(--muted);font-weight:500}
+
+/* nav */
+#nav{position:fixed;right:26px;bottom:22px;color:#cfe0d5;font-size:15px;font-family:Inter;opacity:.55;z-index:99}
+@media print{
+  @page{size:1920px 1080px;margin:0}
+  body{background:#fff;overflow:visible}
+  #deck{position:static;display:block;overflow:visible}
+  #nav{display:none}
+  .slide{display:block!important;position:relative!important;left:auto!important;top:auto!important;
+    transform:none!important;box-shadow:none;page-break-after:always;break-after:page}
+  /* Chrome PDF'ga chop etganda katta xira soyalar to‘rtburchak bo‘lib qoladi — soddalashtiramiz */
+  .ph{box-shadow:0 0 0 3px #3a4a40 inset, 0 0 0 5px #cfd6cf!important}
+  .card,.rev,.src{box-shadow:0 6px 14px rgba(21,35,27,.14)!important}
+  .book{box-shadow:inset 12px 0 0 rgba(0,0,0,.28), inset 15px 0 0 rgba(255,255,255,.07), 5px 5px 0 #efe6d2, 7px 7px 0 #cbbd9c!important}
+  .rev .st,.pill{box-shadow:none!important}
+  body.single .slide{display:none!important}
+  body.single .slide.active{display:block!important}
+  .slide:last-child{page-break-after:auto;break-after:auto}
+}
+</style></head>
+<body>
+<div id="deck">
+
+<!-- 1 — TITLE -->
+<section class="slide active">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="dia" style="width:26px;height:26px;left:120px;top:120px"></div>
+  <div class="dia" style="width:16px;height:16px;left:168px;top:178px;opacity:.7"></div>
+  <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div style="position:absolute;left:120px;top:250px;display:flex;align-items:center;gap:26px">
+    <img src="rasmlar/mark.png" style="height:150px;mix-blend-mode:multiply">
+    <div><div style="font-size:96px;font-weight:900;letter-spacing:.12em;line-height:1">BAYAN</div>
+      <div style="font-family:'Great Vibes',cursive;font-size:52px;color:var(--script);margin-top:2px">Til va qalb orasidagi ko‘prik</div></div>
+  </div>
+  <div style="position:absolute;left:120px;top:500px;font-size:44px;font-weight:800;line-height:1.25;max-width:820px">
+    Arabcha–o‘zbekcha <em style="font-style:normal;color:var(--green)">lug‘at</em> va arab tilini
+    o‘rganish <em style="font-style:normal;color:var(--green)">platformasi</em></div>
+  <div style="position:absolute;left:122px;top:650px;font-size:27px;color:var(--muted);font-weight:500;max-width:780px;line-height:1.4">
+    4 tomlik “Al-Qomus” akademik lug‘ati, mashhur arab manbalari, sun’iy intellekt yordamchisi,
+    kitoblar va testlar — bitta ilovada.</div>
+  <div style="position:absolute;left:120px;top:810px;display:flex;align-items:center;gap:22px">
+    <div class="pill"><svg viewBox="0 0 24 24"><path fill="#34A853" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.8-2.2c.9-.5.9-1.9 0-2.4z"/><path fill="#4285F4" d="M13.4 12 3.6 22.2c.3.2.8.2 1.2 0l12-6.8z"/><path fill="#EA4335" d="M3.6 1.8c.4-.2.8-.2 1.2 0l12 6.8-3.4 3.4z"/></svg><div><small>Yuklab oling</small><b>Google Play</b></div></div>
+    <div class="pill"><svg viewBox="0 0 24 24"><path fill="#fff" d="M16.37 12.64c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.24 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.38.81 1.4-.02 2.29-1.27 3.14-2.53.99-1.45 1.4-2.86 1.42-2.93-.03-.01-2.72-1.05-2.73-4.12zM13.8 5.01c.72-.87 1.2-2.08 1.07-3.29-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.09 3.18 1.15.09 2.32-.58 3.04-1.45z"/></svg><div><small>Yuklab oling</small><b>App Store</b></div></div>
+    <div class="site" style="margin-left:10px">bayanai.uz</div>
+  </div>
+  <div class="ph" style="--h:820px;left:1180px;top:180px;transform:rotate(-6deg)"><div class="scr"><img src="rasmlar/bosh_sahifa.png"></div></div>
+  <div class="ph" style="--h:760px;left:1530px;top:280px;transform:rotate(7deg)"><div class="scr"><img src="rasmlar/soz_salom.png"></div></div>
+</section>
+
+<!-- 2 — BIR QARASHDA -->
+<section class="slide">
+  <div class="glow"></div><div class="wm"></div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>02</b> / 14</div>
+  <div class="kick">Bir qarashda</div>
+  <h2>Bayan <em>raqamlarda</em></h2>
+  <div class="card stat" style="left:88px;top:420px;width:400px"><b>100 000+</b><i>so‘z va ibora</i><span>4 tomlik “Al-Qomus” akademik lug‘ati</span></div>
+  <div class="card stat" style="left:528px;top:420px;width:400px"><b>4 ta</b><i>qo‘shimcha manba</i><span>Al-Vasit · Mavsua · Maqollar · Vikipediya</span></div>
+  <div class="card stat" style="left:968px;top:420px;width:400px"><b>111 ta</b><i>kitob</i><span>Kamil Kiloniy bolalar kutubxonasi</span></div>
+  <div class="card stat" style="left:1408px;top:420px;width:400px"><b>1017 ta</b><i>test savoli</i><span>Nahv ilmi bo‘yicha 16 bob</span></div>
+  <div class="card stat" style="left:88px;top:700px;width:400px"><b>300+</b><i>ilmiy maqola</i><span>Baheth manbasidan, bo‘limlarga ajratilgan</span></div>
+  <div class="card stat" style="left:528px;top:700px;width:400px"><b>51 ta</b><i>mavzu</i><span>Mavzulashtirilgan lug‘atlar</span></div>
+  <div class="card stat" style="left:968px;top:700px;width:400px"><b>Bayan AI</b><i style="font-size:23px">tahlil · tarjima · misollar</i><span>Sun’iy intellekt yordamchisi</span></div>
+  <div class="card stat" style="left:1408px;top:700px;width:400px"><b>Oflayn</b><i>internetsiz ishlaydi</i><span>Lug‘at har doim yoningizda</span></div>
+  <div class="dots"></div>
+</section>
+
+<!-- 3 — AL-QOMUS -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div><div class="stripes"></div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>03</b> / 14</div>
+  <div class="kick">Asos</div>
+  <h2>4 tomlik <em>Al-Qomus</em><br>ilova ichida</h2>
+  <div class="lead" style="top:420px;max-width:620px">Arabcha–o‘zbekcha qomusiy lug‘at to‘liq raqamlashtirildi.
+    So‘z qidirsangiz — javob aynan shu kitob bazasidan keladi.</div>
+  <div class="book" style="left:100px;top:590px;transform:rotate(-13deg);z-index:1"><div class="md">القاموس</div><div class="vol">1-JILD</div></div>
+  <div class="book" style="left:230px;top:566px;transform:rotate(-4deg);z-index:2"><div class="md">القاموس</div><div class="vol">2-JILD</div></div>
+  <div class="book" style="left:360px;top:570px;transform:rotate(5deg);z-index:3"><div class="md">القاموس</div><div class="vol">3-JILD</div></div>
+  <div class="book" style="left:490px;top:596px;transform:rotate(14deg);z-index:4"><div class="md">القاموس</div><div class="vol">4-JILD</div></div>
+  <div style="position:absolute;left:120px;top:900px;font-size:21px;color:var(--muted);font-weight:500;max-width:700px;line-height:1.45">
+    Prof. Ne’mat Ibrohimov rahbarligida, ~10 yil davomida tuzilgan · “G‘afur G‘ulom” nashriyoti</div>
+  <div class="card stat" style="left:800px;top:430px;width:300px"><b>100 000+</b><span style="font-size:21px">so‘z va ibora</span></div>
+  <div class="card stat" style="left:800px;top:590px;width:300px"><b>4 tom</b><span style="font-size:21px">akademik nashr</span></div>
+  <div class="card stat" style="left:800px;top:750px;width:300px"><b style="font-size:34px">Qur’on va mumtoz</b><span style="font-size:21px">so‘zlar ham qamrab olingan</span></div>
+  <div class="ph" style="--h:880px;left:1290px;top:150px;transform:rotate(5deg)"><div class="scr"><img src="rasmlar/soz_salom.png"></div></div>
+</section>
+
+<!-- 4 — BITTA SO'Z, KO'P MANBA -->
+<section class="slide">
+  <div class="glow"></div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>04</b> / 14</div>
+  <div style="position:absolute;left:0;right:0;top:150px;text-align:center;font-family:'Great Vibes',cursive;font-size:50px;color:var(--script)">Bitta qidiruv</div>
+  <h2 style="left:0;right:0;top:205px;max-width:none;text-align:center;font-size:72px">Bitta so‘z — <em>bir nechta</em> manba</h2>
+  <div class="lead" style="left:0;right:0;top:300px;max-width:none;text-align:center;font-size:26px">Arabcha so‘zni qidirsangiz, turli manbalardagi ma’lumotlar bir joyda jamlanadi.</div>
+  <div class="ph" style="--h:630px;left:806px;top:372px"><div class="scr"><img src="rasmlar/soz_manbalar.png"></div></div>
+  <div class="src" style="left:120px;top:370px"><div class="t" style="background:var(--maroon)"><b>AL-QOMUS</b><span>القاموس</span></div><p>Arabcha–o‘zbekcha akademik lug‘at, 4 tom</p></div>
+  <div class="src" style="left:120px;top:550px"><div class="t" style="background:var(--script)"><b>SINONIM / ANTONIM</b><span>مرادفات · أضداد</span></div><p>Ma’nodosh va zid so‘zlar bir joyda</p></div>
+  <div class="src" style="left:120px;top:730px"><div class="t" style="background:#2F4E8C"><b>VIKIPEDIYA</b><span>ويكيبيديا</span></div><p>Arabcha ensiklopedik ma’lumot</p></div>
+  <div class="src" style="left:1470px;top:370px"><div class="t" style="background:#7C5A1E"><b>AL-VASIT</b><span>المعجم الوسيط</span></div><p>Arabcha izohli lug‘at, jild va bet bilan</p></div>
+  <div class="src" style="left:1470px;top:550px"><div class="t" style="background:var(--navy)"><b>AL-MAWSU‘A</b><span>الموسوعة الفقهية</span></div><p>Kuvayt fiqh ensiklopediyasi</p></div>
+  <div class="src" style="left:1470px;top:730px"><div class="t" style="background:#9B2C2C"><b>MAQOLLAR</b><span>مجمع الأمثال</span></div><p>So‘z qatnashgan mashhur arab maqollari</p></div>
+  <div class="src" style="left:120px;top:905px"><div class="t" style="background:var(--blue)"><b>MISOLLAR + AI</b><span>أمثلة</span></div><p>Bayan AI yangi misol jumlalar yaratadi</p></div>
+  <div class="wire l" style="left:450px;top:440px;width:340px"></div>
+  <div class="wire l" style="left:450px;top:620px;width:340px"></div>
+  <div class="wire l" style="left:450px;top:800px;width:340px"></div>
+  <div class="wire l" style="left:450px;top:975px;width:340px"></div>
+  <div class="wire r" style="left:1120px;top:440px;width:340px"></div>
+  <div class="wire r" style="left:1120px;top:620px;width:340px"></div>
+  <div class="wire r" style="left:1120px;top:800px;width:340px"></div>
+</section>
+
+<!-- 5 — LUG'AT -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>05</b> / 14</div>
+  <div class="kick">Lug‘at</div>
+  <h2>So‘zni yozing —<br><em>bir zumda</em> toping</h2>
+  <ul class="bul" style="left:90px;top:470px">
+    <li><div class="ic" style="background:var(--green)">⚡</div><div><b>Tezkor qidiruv</b><span>Natijalar yozayotganda chiqadi</span></div></li>
+    <li><div class="ic" style="background:var(--red)">📴</div><div><b>Oflayn ishlaydi</b><span>Internetsiz ham to‘liq lug‘at</span></div></li>
+    <li><div class="ic" style="background:var(--blue)">✨</div><div><b>AI qidiruv</b><span>Lug‘atdan topilmagan so‘zlar uchun</span></div></li>
+    <li><div class="ic" style="background:var(--purple)">🔗</div><div><b>To‘liq so‘z sahifasi</b><span>Ma’nolar, ko‘plik, o‘zak, sinonim va antonimlar</span></div></li>
+  </ul>
+  <div class="ph" style="--h:800px;left:960px;top:210px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/qidiruv_salom.png"></div></div>
+  <div class="ph" style="--h:800px;left:1420px;top:250px;transform:rotate(6deg)"><div class="scr"><img src="rasmlar/soz_salom.png"></div></div>
+</section>
+
+<!-- 6 — MANBALAR -->
+<section class="slide">
+  <div class="glow"></div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>06</b> / 14</div>
+  <div class="kick">Manbalar</div>
+  <h2 style="font-size:76px">Arab olamining<br><em>mashhur manbalari</em></h2>
+  <div class="lead" style="top:400px;max-width:1200px">So‘z sahifasining o‘zidan bir bosishda ochiladi — jild va bet raqami bilan.</div>
+  <div class="ph" style="--h:500px;left:130px;top:440px"><div class="scr"><img src="rasmlar/al_vasit.png"></div></div>
+  <div class="cap" style="left:130px;top:975px;width:252px">Al-Vasit<span>المعجم الوسيط</span></div>
+  <div class="ph" style="--h:500px;left:560px;top:440px"><div class="scr"><img src="rasmlar/mavsua.png"></div></div>
+  <div class="cap" style="left:560px;top:975px;width:252px">Fiqh ensiklopediyasi<span>الموسوعة الفقهية</span></div>
+  <div class="ph" style="--h:500px;left:990px;top:440px"><div class="scr"><img src="rasmlar/matallar.png"></div></div>
+  <div class="cap" style="left:990px;top:975px;width:252px">Matallar<span>مجمع الأمثال</span></div>
+  <div class="ph" style="--h:500px;left:1420px;top:440px"><div class="scr"><img src="rasmlar/vikipediya.png"></div></div>
+  <div class="cap" style="left:1420px;top:975px;width:252px">Vikipediya<span>ويكيبيديا</span></div>
+</section>
+
+<!-- 7 — SARF + MISOLLAR -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>07</b> / 14</div>
+  <div class="kick">Sarf va misollar</div>
+  <h2>Fe’l tuslanishi va<br><em>AI misollari</em></h2>
+  <ul class="bul" style="left:90px;top:480px">
+    <li><div class="ic" style="background:var(--green)">📊</div><div><b>To‘liq sarf jadvali</b><span>Ma’lum, majhul va amr — barcha zamirlar bilan</span></div></li>
+    <li><div class="ic" style="background:var(--blue)">✍️</div><div><b>5 ta yangi misol</b><span>Bayan AI so‘z ishtirokida jumlalar tuzadi</span></div></li>
+    <li><div class="ic" style="background:var(--purple)">🔄</div><div><b>Yangilash</b><span>Istagancha yangi misollar so‘rang</span></div></li>
+  </ul>
+  <div class="ph" style="--h:800px;left:960px;top:210px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/sarf_jadvali.png"></div></div>
+  <div class="ph" style="--h:800px;left:1420px;top:250px;transform:rotate(6deg)"><div class="scr"><img src="rasmlar/ai_misollar.png"></div></div>
+</section>
+
+<!-- 8 — BAYAN AI -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>08</b> / 14</div>
+  <div class="kick">Sun’iy intellekt</div>
+  <h2>Bayan AI — <em>grammatika</em><br>va <em>tarjima</em></h2>
+  <ul class="bul" style="left:90px;top:480px">
+    <li><div class="ic" style="background:var(--purple)">🧠</div><div><b>Grammatik tahlil (i’rob)</b><span>Jumladagi har bir so‘zning o‘rni tushuntiriladi</span></div></li>
+    <li><div class="ic" style="background:var(--green)">🇺🇿</div><div><b>O‘zbekcha tarjima</b><span>Tahlil ostida darhol beriladi</span></div></li>
+    <li><div class="ic" style="background:var(--blue)">💬</div><div><b>Ikki tomonlama tarjimon</b><span>Arabcha ↔ o‘zbekcha, harakatlari bilan</span></div></li>
+  </ul>
+  <div class="ph" style="--h:800px;left:960px;top:210px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/grammatik_tahlil.png"></div></div>
+  <div class="ph" style="--h:800px;left:1420px;top:250px;transform:rotate(6deg)"><div class="scr"><img src="rasmlar/tarjimon.png"></div></div>
+</section>
+
+<!-- 9 — KITOB O'QISH -->
+<section class="slide">
+  <div class="glow"></div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>09</b> / 14</div>
+  <div class="kick">Kitob o‘qish</div>
+  <h2 style="font-size:70px">O‘qing, <em>bilmagan</em><br><em>so‘zni bosing</em></h2>
+  <div class="lead" style="top:392px;max-width:1100px">Kamil Kiloniyning 111 ta hikoya kitobi. Notanish so‘z ustiga bosing — ma’nosi chiqadi,
+    butun paragrafni esa Bayan AI tarjima qiladi.</div>
+  <div class="ph" style="--h:470px;left:200px;top:490px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/kiloniy_kitoblari.png"></div></div>
+  <div class="cap" style="left:200px;top:1000px;width:248px;font-size:22px">111 ta kitob</div>
+  <div class="ph" style="--h:470px;left:790px;top:490px"><div class="scr"><img src="rasmlar/kitobda_soz_tarjimasi.png"></div></div>
+  <div class="cap" style="left:790px;top:1000px;width:248px;font-size:22px">So‘zni bosing — tarjima</div>
+  <div class="ph" style="--h:470px;left:1380px;top:490px;transform:rotate(5deg)"><div class="scr"><img src="rasmlar/butun_blok_tarjima.png"></div></div>
+  <div class="cap" style="left:1380px;top:1000px;width:248px;font-size:22px">Butun blok — AI tarjimasi</div>
+</section>
+
+<!-- 10 — TO'PLAMLAR + MAVZULAR -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>10</b> / 14</div>
+  <div class="kick">Yodlash</div>
+  <h2>So‘zlarni <em>o‘z bo‘limingizga</em><br>yig‘ing</h2>
+  <ul class="bul" style="left:90px;top:500px">
+    <li><div class="ic" style="background:var(--blue)">🔖</div><div><b>O‘z to‘plamingiz</b><span>Har bir kitob yoki mavzu uchun alohida daftar kabi</span></div></li>
+    <li><div class="ic" style="background:var(--green)">🗂️</div><div><b>Bir so‘z — bir necha to‘plam</b><span>Belgilang va saqlang</span></div></li>
+    <li><div class="ic" style="background:var(--red)">🍎</div><div><b>51 ta tayyor mavzu</b><span>Tabiat, kasblar, ob-havo va boshqalar</span></div></li>
+  </ul>
+  <div class="ph" style="--h:800px;left:960px;top:210px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/toplamga_qoshish.png"></div></div>
+  <div class="ph" style="--h:800px;left:1420px;top:250px;transform:rotate(6deg)"><div class="scr"><img src="rasmlar/mavzular.png"></div></div>
+</section>
+
+<!-- 11 — TESTLAR + MAQOLALAR -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>11</b> / 14</div>
+  <div class="kick">Bilimlar hovlisi</div>
+  <h2>Testlar va<br><em>ilmiy maqolalar</em></h2>
+  <ul class="bul" style="left:90px;top:480px">
+    <li><div class="ic" style="background:var(--green)">📚</div><div><b>Nahv ilmi: 16 bob</b><span>1017 ta savol, natija darhol ko‘rinadi</span></div></li>
+    <li><div class="ic" style="background:var(--script)">🔀</div><div><b>Tasodifiy test</b><span>Boblarni o‘zingiz tanlaysiz</span></div></li>
+    <li><div class="ic" style="background:var(--navy)">📰</div><div><b>300+ ilmiy maqola</b><span>Nahv, sarf, i’rob, imlo, balog‘a bo‘limlari</span></div></li>
+  </ul>
+  <div class="ph" style="--h:800px;left:960px;top:210px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/testlar_boblar.png"></div></div>
+  <div class="ph" style="--h:800px;left:1420px;top:250px;transform:rotate(6deg)"><div class="scr"><img src="rasmlar/maqolalar_baheth.png"></div></div>
+</section>
+
+<!-- 12 — MAQOL VA HIKMAT -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>12</b> / 14</div>
+  <div class="kick">Maqol va hikmatlar</div>
+  <h2>Arab <em>donoligi</em>,<br>chiroyli ulashish</h2>
+  <ul class="bul" style="left:90px;top:500px">
+    <li><div class="ic" style="background:var(--script)">💬</div><div><b>Maqol va hikmatlar</b><span>Arabcha, o‘zbekcha va inglizcha tarjimasi bilan</span></div></li>
+    <li><div class="ic" style="background:var(--purple)">🎨</div><div><b>O‘nlab shablon va rang</b><span>Instagram, Telegram uchun tayyor rasm</span></div></li>
+  </ul>
+  <div class="ph" style="--h:800px;left:960px;top:210px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/maqollar.png"></div></div>
+  <div class="ph" style="--h:800px;left:1420px;top:250px;transform:rotate(6deg)"><div class="scr"><img src="rasmlar/ulashish.png"></div></div>
+</section>
+
+<!-- 13 — FIKRLAR -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>13</b> / 14</div>
+  <div class="kick">Foydalanuvchilar fikri</div>
+  <h2>Ular nima <em>deydi?</em></h2>
+  <div class="rev" style="left:90px;top:430px"><div class="top"><div class="av" style="background:var(--green)">IY</div>
+    <div class="who"><b>Ismoil Yaqub</b><span>Google Play</span></div><div class="st">★★★★★</div></div>
+    <p>Juda qulay! Bir so‘zga 10–15 ta eng yaqin ma’nolarni chiqarib beradi — sinonimlar bilan o‘zingizga keragini topasiz.</p></div>
+  <div class="rev" style="left:540px;top:430px"><div class="top"><div class="av" style="background:var(--script)">AV</div>
+    <div class="who"><b>Ali Valiyov</b><span>Google Play</span></div><div class="st">★★★★★</div></div>
+    <p>Mashaalloh, zo‘r ishlayabdi. Oflaynligi uchun alohida rahmat!</p></div>
+  <div class="rev" style="left:90px;top:720px"><div class="top"><div class="av" style="background:#1B3A28">SM</div>
+    <div class="who"><b>Sohibjon Mannonov</b><span>Google Play</span></div><div class="st">★★★★★</div></div>
+    <p>Hammaga tavsiya etaman — orzudagi lug‘at ilova bu. Ajoyib!</p></div>
+  <div class="rev" style="left:540px;top:720px"><div class="top"><div class="av" style="background:var(--red)">IM</div>
+    <div class="who"><b>Iskandar Mukhammadjanov</b><span>Google Play</span></div><div class="st">★★★★★</div></div>
+    <p>Ilova juda foydali bo‘libdi. Barchaga tavsiya qilaman.</p></div>
+  <div class="ph" style="--h:820px;left:1180px;top:190px;transform:rotate(-5deg)"><div class="scr"><img src="rasmlar/qidiruv.png"></div></div>
+  <div class="ph" style="--h:760px;left:1530px;top:290px;transform:rotate(7deg)"><div class="scr"><img src="rasmlar/hikmatlar.png"></div></div>
+</section>
+
+<!-- 14 — YAKUNIY -->
+<section class="slide">
+  <div class="glow"></div><div class="wm">بيان</div>
+  <div class="dia" style="width:26px;height:26px;left:120px;top:130px"></div>
+  <div class="dia" style="width:16px;height:16px;left:168px;top:188px;opacity:.7"></div>
+  <div class="hd"><img src="rasmlar/mark.png"><b>BAYAN</b></div><div class="num"><b>14</b> / 14</div>
+  <div class="kick" style="top:230px">Bugunoq boshlang</div>
+  <h2 style="top:290px;font-size:96px">Bayan bilan<br>arab tili <em>oson</em></h2>
+  <div style="position:absolute;left:90px;top:560px;display:flex;flex-wrap:wrap;gap:14px;max-width:820px">
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ Al-Qomus · 100 000+ so‘z</span>
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ Al-Vasit · Mavsua · Maqollar</span>
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ Bayan AI</span>
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ Sarf jadvali</span>
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ 111 kitob</span>
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ 1017 test</span>
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ To‘plamlar</span>
+    <span class="card" style="position:static;padding:12px 24px;font-size:22px;font-weight:600;border-radius:999px">◆ Oflayn</span>
+  </div>
+  <div style="position:absolute;left:90px;top:790px;display:flex;align-items:center;gap:22px">
+    <div class="pill"><svg viewBox="0 0 24 24"><path fill="#34A853" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.8-2.2c.9-.5.9-1.9 0-2.4z"/><path fill="#4285F4" d="M13.4 12 3.6 22.2c.3.2.8.2 1.2 0l12-6.8z"/><path fill="#EA4335" d="M3.6 1.8c.4-.2.8-.2 1.2 0l12 6.8-3.4 3.4z"/></svg><div><small>Yuklab oling</small><b>Google Play</b></div></div>
+    <div class="pill"><svg viewBox="0 0 24 24"><path fill="#fff" d="M16.37 12.64c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.24 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.38.81 1.4-.02 2.29-1.27 3.14-2.53.99-1.45 1.4-2.86 1.42-2.93-.03-.01-2.72-1.05-2.73-4.12zM13.8 5.01c.72-.87 1.2-2.08 1.07-3.29-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.09 3.18 1.15.09 2.32-.58 3.04-1.45z"/></svg><div><small>Yuklab oling</small><b>App Store</b></div></div>
+  </div>
+  <div class="site" style="position:absolute;left:92px;top:910px">bayanai.uz</div>
+  <div class="tag" style="position:absolute;left:92px;top:965px">Bayan — til va qalb orasidagi ko‘prik</div>
+  <div class="ph" style="--h:820px;left:1300px;top:200px;transform:rotate(6deg)"><div class="scr"><img src="rasmlar/bosh_sahifa.png"></div></div>
+</section>
+
+</div>
+<div id="nav">← → yoki bo‘sh joy · <span id="pos">1 / 14</span></div>
+<script>
+  const slides = [...document.querySelectorAll('.slide')];
+  let i = 0;
+  const fit = () => {
+    const k = Math.min(innerWidth / 1920, innerHeight / 1080) * 0.96;
+    document.documentElement.style.setProperty('--k', k);
+  };
+  const show = n => {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, j) => s.classList.toggle('active', j === i));
+    document.getElementById('pos').textContent = (i + 1) + ' / ' + slides.length;
+  };
+  addEventListener('resize', fit);
+  addEventListener('keydown', e => {
+    if (['ArrowRight', ' ', 'PageDown', 'ArrowDown'].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    if (['ArrowLeft', 'PageUp', 'ArrowUp'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+  addEventListener('click', e => show(e.clientX < innerWidth / 2 ? i - 1 : i + 1));
+  const q = new URLSearchParams(location.search).get('s');
+  if (q) {                       // ?s=N — bitta slaydni 1:1 ko‘rsatish (rasmga olish uchun)
+    document.documentElement.style.setProperty('--k', 1);
+    document.getElementById('deck').style.overflow = 'visible';
+    document.body.style.background = '#FAF6EE';
+    document.getElementById('nav').style.display = 'none';
+    document.body.classList.add('single');
+    show(parseInt(q, 10) - 1);
+  } else { fit(); show(0); }
+</script>
+</body></html>

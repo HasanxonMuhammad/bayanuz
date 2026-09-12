@@ -7,7 +7,8 @@ import { DOWNLOAD_URL } from "@/lib/links";
 
 const NAV_LINKS = [
   { label: "Bosh sahifa", href: "/" },
-  { label: "Imkoniyatlar", href: "/#features" },
+  { label: "Imkoniyatlar", href: "/imkoniyatlar" },
+  { label: "Taqdimot", href: "/taqdimot" },
   { label: "Maqolalar", href: "/maqolalar" },
   { label: "Hikoyalar", href: "/hikoyalar" },
   { label: "FAQ", href: "/#faq" },
