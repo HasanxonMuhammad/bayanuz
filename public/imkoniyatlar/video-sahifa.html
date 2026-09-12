@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bayan — ilova imkoniyatlari</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF6EE;--ink:#15231B;--green:#0F6B48;--red:#E5473C;--gold:#E2B857;--muted:#6B7A70;--script:#B4553A;--navy:#1E3A8A;--blue:#2F6CF6;--purple:#7B3DFF;--maroon:#8a1618}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,"Helvetica Neue",Arial,sans-serif;line-height:1.5;overflow-x:hidden}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* hero */
+header{position:relative;padding:74px 0 40px;overflow:hidden}
+header .wm{position:absolute;right:-40px;top:20px;font-family:Amiri,serif;font-weight:700;font-size:300px;color:var(--green);opacity:.05;line-height:1;pointer-events:none}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:38px}
+.brand img{height:58px}
+.brand b{font-size:23px;font-weight:800;letter-spacing:.18em}
+.kick{font-family:"Great Vibes",cursive;font-size:52px;color:var(--script);line-height:1}
+h1{font-size:clamp(40px,6vw,76px);font-weight:900;letter-spacing:-.03em;line-height:1.03;margin:6px 0 18px;max-width:16ch}
+h1 em{font-style:normal;color:var(--green)}
+.lead{font-size:clamp(17px,2.1vw,23px);color:var(--muted);font-weight:500;max-width:60ch}
+.stores{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px}
+.pill{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:#fff;border-radius:16px;padding:12px 22px 12px 16px;text-decoration:none}
+.pill svg{width:28px;height:28px}
+.pill small{display:block;font-size:11px;opacity:.75;letter-spacing:.08em;text-transform:uppercase}
+.pill b{font-size:19px;font-weight:800}
+.site{font-size:22px;font-weight:900;color:var(--ink);text-decoration:none;border-bottom:3px solid var(--gold)}
+.stat-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.stat{background:#fff;border-radius:14px;padding:10px 18px;font-size:15px;font-weight:600;box-shadow:0 10px 24px -18px rgba(21,35,27,.5)}
+.stat i{font-style:normal;color:var(--red);margin-right:7px}
+
+/* feature rows */
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:64px 0;border-top:1px solid rgba(21,35,27,.08)}
+.feat:nth-child(even) .txt{order:2}
+.num{font-size:13px;font-weight:800;letter-spacing:.18em;color:var(--muted);margin-bottom:12px}
+.num span{color:var(--green)}
+.feat h2{font-size:clamp(27px,3.4vw,42px);font-weight:900;letter-spacing:-.02em;line-height:1.1;margin-bottom:14px}
+.feat h2 em{font-style:normal;color:var(--green)}
+.feat p{font-size:18px;color:#33413a;max-width:48ch}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.tag{background:#fff;border-radius:999px;padding:8px 16px;font-size:14.5px;font-weight:600;box-shadow:0 8px 20px -16px rgba(21,35,27,.6)}
+.tag i{font-style:normal;margin-right:6px}
+
+/* phone */
+.stage{display:flex;justify-content:center;position:relative}
+.stage::before{content:"";position:absolute;width:78%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(15,107,72,.16),transparent 68%);filter:blur(6px)}
+.phone{position:relative;width:300px;padding:11px;border-radius:46px;background:linear-gradient(145deg,#2b3a31,#0c1510 55%,#223027);
+  box-shadow:0 40px 70px -34px rgba(11,40,28,.7), 0 0 0 2px #3a4a40 inset, 0 0 0 4px #cfd6cf}
+.phone video{display:block;width:100%;border-radius:36px;background:#F4F2EC}
+
+/* cta */
+.cta{text-align:center;padding:86px 0 100px;border-top:1px solid rgba(21,35,27,.08)}
+.cta h2{font-size:clamp(32px,5vw,58px);font-weight:900;letter-spacing:-.03em;margin-bottom:14px}
+.cta h2 em{font-style:normal;color:var(--green)}
+.cta p{color:var(--muted);font-size:19px;margin-bottom:28px}
+.cta .stores{justify-content:center}
+footer{padding:30px 0 60px;text-align:center;color:var(--muted);font-size:14px}
+
+@media (max-width:880px){
+  .feat{grid-template-columns:1fr;gap:32px;padding:48px 0}
+  .feat:nth-child(even) .txt{order:0}
+  header{padding:48px 0 20px}
+  header .wm{font-size:180px;top:0}
+  .phone{width:260px}
+}
+</style></head>
+<body>
+<header><div class="wm">بيان</div><div class="wrap">
+  <div class="brand"><img src="/taqdimot/rasmlar/mark.png" alt="Bayan"><b>BAYAN</b></div>
+  <div class="kick">Ilova ichida</div>
+  <h1>Bayan nimalarni <em>qila oladi?</em></h1>
+  <p class="lead">Har bir imkoniyat — ilovaning o‘zidan olingan jonli yozuv. Aylantiring va ko‘ring:
+    lug‘at, manbalar, sun’iy intellekt, kitoblar, testlar va boshqalar.</p>
+  <div class="stores">
+    <a class="pill" href="https://www.bayanai.uz/download"><svg viewBox="0 0 24 24"><path fill="#34A853" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.8-2.2c.9-.5.9-1.9 0-2.4z"/><path fill="#4285F4" d="M13.4 12 3.6 22.2c.3.2.8.2 1.2 0l12-6.8z"/><path fill="#EA4335" d="M3.6 1.8c.4-.2.8-.2 1.2 0l12 6.8-3.4 3.4z"/></svg><span><small>Yuklab oling</small><b>Google Play</b></span></a>
+    <a class="pill" href="https://www.bayanai.uz/download"><svg viewBox="0 0 24 24"><path fill="#fff" d="M16.37 12.64c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.24 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.38.81 1.4-.02 2.29-1.27 3.14-2.53.99-1.45 1.4-2.86 1.42-2.93-.03-.01-2.72-1.05-2.73-4.12zM13.8 5.01c.72-.87 1.2-2.08 1.07-3.29-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.09 3.18 1.15.09 2.32-.58 3.04-1.45z"/></svg><span><small>Yuklab oling</small><b>App Store</b></span></a>
+    <a class="site" href="https://bayanai.uz">bayanai.uz</a>
+  </div>
+  <div class="stat-row">
+    <div class="stat"><i>◆</i>Al-Qomus · 100 000+ so‘z</div>
+    <div class="stat"><i>◆</i>4 ta qo‘shimcha manba</div>
+    <div class="stat"><i>◆</i>111 ta kitob</div>
+    <div class="stat"><i>◆</i>1017 ta test</div>
+    <div class="stat"><i>◆</i>Oflayn ishlaydi</div>
+  </div>
+</div></header>
+
+<main class="wrap" id="feats"></main>
+
+<section class="cta"><div class="wrap">
+  <h2>Bayan bilan arab tili <em>oson</em></h2>
+  <p>Bugunoq yuklab oling — lug‘at, manbalar va sun’iy intellekt bir ilovada.</p>
+  <div class="stores">
+    <a class="pill" href="https://www.bayanai.uz/download"><svg viewBox="0 0 24 24"><path fill="#34A853" d="M3.6 1.8 13.4 12l-9.8 10.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2z"/><path fill="#FBBC04" d="m16.8 8.6-3.4 3.4 3.4 3.4 3.8-2.2c.9-.5.9-1.9 0-2.4z"/><path fill="#4285F4" d="M13.4 12 3.6 22.2c.3.2.8.2 1.2 0l12-6.8z"/><path fill="#EA4335" d="M3.6 1.8c.4-.2.8-.2 1.2 0l12 6.8-3.4 3.4z"/></svg><span><small>Yuklab oling</small><b>Google Play</b></span></a>
+    <a class="pill" href="https://www.bayanai.uz/download"><svg viewBox="0 0 24 24"><path fill="#fff" d="M16.37 12.64c-.03-2.6 2.12-3.85 2.22-3.91-1.21-1.77-3.09-2.01-3.76-2.04-1.6-.16-3.12.94-3.93.94-.81 0-2.06-.92-3.39-.89-1.74.03-3.35 1.01-4.25 2.57-1.81 3.14-.46 7.79 1.3 10.34.86 1.25 1.89 2.65 3.24 2.6 1.3-.05 1.79-.84 3.36-.84 1.57 0 2.01.84 3.38.81 1.4-.02 2.29-1.27 3.14-2.53.99-1.45 1.4-2.86 1.42-2.93-.03-.01-2.72-1.05-2.73-4.12zM13.8 5.01c.72-.87 1.2-2.08 1.07-3.29-1.03.04-2.28.69-3.02 1.56-.66.77-1.24 2-1.09 3.18 1.15.09 2.32-.58 3.04-1.45z"/></svg><span><small>Yuklab oling</small><b>App Store</b></span></a>
+    <a class="site" href="https://bayanai.uz">bayanai.uz</a>
+  </div>
+</div></section>
+<footer>Bayan — til va qalb orasidagi ko‘prik</footer>
+
+<script>
+const F = [
+  ['14_bosh_sahifa','Bosh sahifa','Kun maqoli, kun hikmati va <em>tezkor test</em>','Ilovani ochishingiz bilan: qidiruv maydoni, Bayan AI yordamchisi, kun maqoli va hikmati hamda bir bosishda boshlanadigan tezkor test.',['Kun maqoli','Kun hikmati','Tezkor test']],
+  ['01_qidiruv','Lug‘at','O‘zbekcha yozing — <em>arabchasini</em> toping','Lotin harflarida yozasiz, ilova mos so‘zlarni darhol chiqaradi. Arabcha ham, o‘zbekcha ham qidirsa bo‘ladi — internetsiz ham ishlaydi.',['Oflayn','Ikki tomonlama','AI qidiruv']],
+  ['02_soz_sahifasi','So‘z sahifasi','Bitta so‘z — <em>to‘liq ma’lumot</em>','Al-Qomus lug‘atidan raqamlangan ma’nolar, o‘zak va ko‘plik shakli, sinonim va antonimlar — hammasi bir sahifada.',['Ma’nolar','O‘zak va ko‘plik','Sinonim / antonim']],
+  ['03_manbalar','Manbalar','Arab olamining <em>mashhur manbalari</em>','So‘z sahifasidan bir bosishda: Mu’jam al-Vasit, Kuvayt fiqh ensiklopediyasi, klassik matallar to‘plami va arabcha Vikipediya — jild va bet raqami bilan.',['Al-Vasit','Mavsua','Matallar','Vikipediya']],
+  ['04_ai_misollar','Misollar','Yangi misollarni <em>AI yaratadi</em>','“Boshlash”ni bosing — Bayan AI shu so‘z ishtirokida 5 ta yangi misol jumla tuzib, har birini o‘zbekchaga tarjima qilib beradi.',['5 ta misol','Tarjimasi bilan','Yangilash']],
+  ['05_sarf','Sarf','Fe’lning <em>to‘liq tuslanishi</em>','Bir tugma — va fe’l barcha zamirlar bo‘yicha jadvalda. Ma’lum, majhul va amr shakllari alohida bo‘limlarda.',['Ma’lum','Majhul','Amr']],
+  ['07_ai_tahlil','Bayan AI','Jumlani <em>i’rob</em> bilan tahlil qiling','Arabcha jumlani yozing — sun’iy intellekt har bir so‘zning grammatik o‘rnini tushuntirib, jumlani o‘zbekchaga tarjima qiladi.',['I’rob','Tarkib','O‘zbekcha tarjima']],
+  ['08_tarjimon','Tarjimon','Arab <em>↔</em> o‘zbek tarjima','O‘zbekcha yoki arabcha gap yozing — soniyalar ichida harakatlari qo‘yilgan, tabiiy tarjimani oling.',['Ikki tomonlama','Harakatlar bilan','Nusxalash']],
+  ['09_kitoblar','Kutubxona','Kamil Kiloniyning <em>111 ta kitobi</em>','Bolalar uchun mumtoz arab hikoyalari — har biri o‘qish vaqti bilan. Ichida qulay o‘quvchi: shrift o‘lchami, sahifalar, davom ettirish.',['111 ta kitob','Qulay o‘quvchi','Davom ettirish']],
+  ['13_kitobda_tarjima','O‘qish','Bilmagan so‘zni <em>bosing</em>','O‘qiyotganda notanish so‘z ustiga bosing — ma’nolari darhol chiqadi. Butun paragrafni esa Bayan AI o‘zbekchaga tarjima qilib beradi.',['So‘z ma’nosi','Butun blok tarjimasi','Nusxa olish']],
+  ['06_toplam','To‘plamlar','So‘zlarni <em>o‘z bo‘limingizga</em> yig‘ing','Har bir kitob yoki mavzu uchun alohida daftar kabi: yorliqni bosing, to‘plamni tanlang yoki yangisini oching va so‘zlarni yodlab boring.',['O‘z to‘plamingiz','Bir necha to‘plam','Sevimlilar']],
+  ['10_mavzular','Mavzular','<em>51 mavzu</em> bo‘yicha lug‘atlar','Hasharotlar, mevalar, kasblar, ob-havo... Har bir mavzuda o‘nlab so‘z — arabcha, o‘zbekcha va inglizcha.',['51 mavzu','3 tilda','Yuzlab so‘z']],
+  ['11_ulashish','Ulashish','Hikmatlarni <em>chiroyli</em> ulashing','Maqol va hikmatni tanlang, shablon va rangni o‘zgartiring — Instagram yoki Telegram uchun tayyor rasm bir bosishda.',['O‘nlab shablon','Ranglar','3 tilda']],
+  ['12_testlar','Testlar','Nahv ilmi: <em>1017 ta savol</em>','16 bob, har bobda darslar va testlar. Javobni tanlaysiz — to‘g‘risi darhol ko‘rinadi va keyingi savolga o‘tasiz.',['16 bob','1017 savol','Darhol natija']],
+  ['15_premium_holat','Premium','Bayan <em>Premium</em>','Cheksiz Bayan AI, Kamil Kiloniy kutubxonasi, barcha darslar va cheksiz testlar — obuna holati, amal qilish muddati bilan.',['Cheksiz AI','Kutubxona','Barcha darslar']],
+];
+document.getElementById('feats').innerHTML = F.map(([v,k,t,p,tags],i)=>`
+  <section class="feat">
+    <div class="txt">
+      <div class="num">${String(i+1).padStart(2,'0')} <span>· ${k}</span></div>
+      <h2>${t}</h2><p>${p}</p>
+      <div class="tags">${tags.map(x=>`<span class="tag"><i>◆</i>${x}</span>`).join('')}</div>
+    </div>
+    <div class="stage"><div class="phone">
+      <video src="${v}.mp4" poster="poster/${v}.jpg" muted loop playsinline preload="none"></video>
+    </div></div>
+  </section>`).join('');
+
+// faqat ko‘rinib turgan videolar o‘ynaydi
+const io = new IntersectionObserver(es => es.forEach(e => {
+  const v = e.target;
+  if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(()=>{}); } else { v.pause(); }
+}), {threshold:.35});
+document.querySelectorAll('video').forEach(v => io.observe(v));
+</script>
+</body></html>
