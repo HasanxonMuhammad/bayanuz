@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["7NYAFZ4P37.com.arabdict.arabLugat"],
+        "components": [{ "/": "/qiroa/*", "comment": "O'qib tushunish testlari" }]
+      }
+    ]
+  }
+}

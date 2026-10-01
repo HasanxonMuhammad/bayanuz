@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
 import { getAllBooksMeta } from "@/lib/books";
+import { getAllTests } from "@/lib/qiroa";
 import { SITE_URL } from "@/lib/links";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -30,5 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...articlePages, ...bookPages];
+  const testPages: MetadataRoute.Sitemap = getAllTests().map((t) => ({
+    url: `${SITE_URL}/qiroa/${t.n}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...articlePages, ...bookPages, ...testPages];
 }

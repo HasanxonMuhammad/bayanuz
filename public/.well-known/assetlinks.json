@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.arabdict.arab_lugat",
+      "sha256_cert_fingerprints": [
+        "4F:FD:F3:D4:91:4D:05:F9:BD:8F:ED:8D:6B:5B:16:1E:98:DD:E8:A3:38:1C:57:B9:3A:D6:77:1E:D6:57:20:28",
+        "F7:22:A9:BA:42:CE:85:A7:04:39:22:BC:86:3D:1E:88:7F:75:AF:9A:48:C0:7C:72:38:4D:F8:4F:0D:4C:CA:E1",
+        "0D:B0:62:7B:E2:49:74:F2:B6:3E:47:E0:86:8F:A3:23:88:B3:B8:A5:A9:9B:19:9F:DE:08:03:7E:65:AC:00:03"
+      ]
+    }
+  }
+]
