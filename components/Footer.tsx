@@ -22,8 +22,9 @@ export function Footer() {
               Til va qalb orasidagi ko&apos;prik
             </p>
             <p className="text-[13px] text-[#7A9A80] leading-[1.6] max-w-sm">
-              Arabcha-O&apos;zbekcha lug&apos;at ilovasi. Offline ishlaydi, bepul,
-              reklamasiz. iPhone va Android uchun.
+              Arab tilini o&apos;zbek tilida o&apos;rganish ilovasi: lug&apos;at,
+              grammatika, imtihon va Bayan AI. Internetsiz ishlaydi, reklamasiz.
+              iPhone va Android uchun.
             </p>
           </div>
 
@@ -41,6 +42,8 @@ export function Footer() {
               { label: "Maqolalar", href: "/maqolalar" },
               { label: "Hikoyalar", href: "/hikoyalar" },
               { label: "Imkoniyatlar", href: "/#features" },
+              { label: "Video ko'rsatmalar", href: "/imkoniyatlar" },
+              { label: "Taqdimot", href: "/taqdimot" },
               { label: "Savol-javob", href: "/#faq" },
             ]}
           />

@@ -24,9 +24,9 @@ const scheherazade = Scheherazade_New({
   display: "swap",
 });
 
-const TITLE = "BAYAN — Arabcha-O'zbekcha lug'at | iPhone va Android";
+const TITLE = "BAYAN — arab tili: lug'at, grammatika va imtihon | iPhone va Android";
 const DESCRIPTION =
-  "BAYAN — Arabcha-O'zbekcha izohli lug'at ilovasi. 120 000+ so'z, fe'l tuslanishi, 6 000+ maqol-hikmat va ilmiy maqolalar. Offline ishlaydi, bepul. App Store va Google Play'da.";
+  "BAYAN — arab tilini o'zbek tilida o'rganish ilovasi: 81 000+ so'zli lug'at, sarf va nahv bo'yicha 111 dars, B1–C2 darajadagi imtihon matnlari, 650 ta so'zlashuv iborasi va Bayan AI. App Store va Google Play'da.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -44,6 +44,10 @@ export const metadata: Metadata = {
     "arab tili o'rganish",
     "BAYAN lug'at",
     "arab uzbek dictionary",
+    "arab tili grammatika",
+    "sarf va nahv",
+    "arab tili imtihon",
+    "arabcha iboralar",
   ],
   authors: [{ name: "BAYAN", url: SITE_URL }],
   creator: "BAYAN",
@@ -103,7 +107,16 @@ export default function RootLayout({
     <html
       lang="uz"
       className={`${playfair.variable} ${inter.variable} ${scheherazade.variable}`}
+      suppressHydrationWarning
     >
+      <head>
+        {/* Scroll-reveal starts hidden only when JS runs (see globals.css). */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -6,9 +6,10 @@ import { BayanLogo } from "./Logo";
 import { DOWNLOAD_URL } from "@/lib/links";
 
 const NAV_LINKS = [
-  { label: "Bosh sahifa", href: "/" },
-  { label: "Imkoniyatlar", href: "/imkoniyatlar" },
-  { label: "Taqdimot", href: "/taqdimot" },
+  { label: "Yangi", href: "/#yangi" },
+  { label: "Imkoniyatlar", href: "/#features" },
+  { label: "Bayan AI", href: "/#ai" },
+  { label: "Premium", href: "/#premium" },
   { label: "Maqolalar", href: "/maqolalar" },
   { label: "Hikoyalar", href: "/hikoyalar" },
   { label: "FAQ", href: "/#faq" },
@@ -36,14 +37,14 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header className="w-full bg-cream sticky top-0 z-40 border-b border-transparent [&.scrolled]:border-border">
-      <nav className="w-full px-6 lg:px-16 h-20 lg:h-24 flex items-center">
+    <header className="w-full bg-cream/80 backdrop-blur-xl supports-[backdrop-filter]:bg-cream/70 sticky top-0 z-40 border-b border-border/60">
+      <nav className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-16 h-16 lg:h-20 flex items-center">
         <Link href="/" aria-label="BAYAN — bosh sahifa" className="shrink-0">
-          <BayanLogo size={48} />
+          <BayanLogo size={40} />
         </Link>
         <div className="flex-1" />
 
-        <div className="hidden md:flex items-center gap-9">
+        <div className="hidden lg:flex items-center gap-7">
           {NAV_LINKS.map((l) => (
             <Link
               key={l.href}
@@ -61,7 +62,7 @@ export function Nav() {
 
         <a
           href={pathname === "/" ? "#download" : DOWNLOAD_URL}
-          className="hidden sm:inline-flex ml-9 pill items-center gap-2 px-5 py-2.5 bg-forest text-white text-[13px] font-bold hover:bg-forest-dark transition-colors"
+          className="hidden sm:inline-flex ml-7 pill items-center gap-2 px-5 py-2.5 bg-forest text-white text-[13px] font-bold hover:bg-forest-dark transition-colors"
         >
           <DownloadIcon />
           Yuklab olish
@@ -73,7 +74,7 @@ export function Nav() {
           aria-label={open ? "Menyuni yopish" : "Menyuni ochish"}
           aria-expanded={open}
           aria-controls="mobile-menu"
-          className="md:hidden ml-4 inline-flex items-center justify-center w-11 h-11 rounded-full bg-white border border-border-2 text-forest"
+          className="lg:hidden ml-3 inline-flex items-center justify-center w-11 h-11 rounded-full bg-white border border-border-2 text-forest"
         >
           {open ? <CloseIcon /> : <MenuIcon />}
         </button>
@@ -82,7 +83,7 @@ export function Nav() {
       {/* Mobile drawer */}
       <div
         id="mobile-menu"
-        className={`md:hidden fixed inset-x-0 top-20 bottom-0 z-30 bg-cream transition-opacity duration-200 ${
+        className={`lg:hidden fixed inset-x-0 top-16 bottom-0 z-30 bg-cream transition-opacity duration-200 ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         aria-hidden={!open}

@@ -1,61 +1,45 @@
 import { StoreButtons } from "./StoreButtons";
 import { DOWNLOAD_URL } from "@/lib/links";
+import { FloatingLetters } from "./FloatingLetters";
 
 export function FinalCta() {
   return (
-    <section className="w-full px-6 lg:px-16 py-24 lg:py-32 bg-cream">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center min-w-0-children">
-        <div className="flex flex-col gap-5">
-          <div className="inline-flex items-center gap-3 px-4 py-2 bg-white rounded-full w-fit">
-            <span className="w-1.5 h-1.5 rounded-full bg-red" />
-            <span className="text-[11px] font-bold tracking-[2px] text-forest">
-              MUTLAQO BEPUL
-            </span>
+    <section className="w-full bg-cream px-5 pb-20 sm:px-6 lg:px-16 lg:pb-28">
+      <div className="reveal relative mx-auto max-w-7xl overflow-hidden rounded-[36px] bg-white px-6 py-14 shadow-[0_40px_90px_-50px_rgba(16,38,27,0.45)] sm:px-12 lg:px-16 lg:py-20">
+        <FloatingLetters className="opacity-70" />
+        <div className="relative grid items-center gap-10 lg:grid-cols-[1fr_auto] min-w-0-children">
+          <div className="flex flex-col gap-5">
+            <span className="ar w-fit text-[30px] leading-none text-emerald">اِبْدَأِ الْيَوْمَ</span>
+            <h2
+              className="text-[38px] font-medium leading-[1.04] tracking-[-0.03em] text-forest sm:text-[52px] lg:text-[64px]"
+              style={{ fontFamily: "var(--font-display)", textWrap: "balance" }}
+            >
+              Ilm yo&apos;li — bir qadamdan boshlanadi
+            </h2>
+            <p className="max-w-[540px] text-[17px] leading-[1.6] text-muted">
+              Bugun bitta so&apos;zdan boshlang, ertaga bitta dars, keyin butun
+              bir matn. BAYAN har qadamda yoningizda — iPhone&apos;da ham,
+              Android&apos;da ham.
+            </p>
+            <StoreButtons size="lg" className="pt-2" />
           </div>
-          <h2
-            className="text-[42px] sm:text-[56px] lg:text-[72px] leading-[1.02] font-medium text-forest tracking-[-0.035em]"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Ilm yo&apos;li —
-            <br />
-            bir qadamda
-          </h2>
-          <p className="text-lg text-muted leading-[1.55] max-w-[520px]">
-            Internetsiz ham yashaydi. Har ikki yozuvni biladi. Doim bepul,
-            doim yoningizda — iPhone&apos;da ham, Android&apos;da ham.
-          </p>
-          <StoreButtons size="lg" className="pt-3" />
-        </div>
 
-        <div className="relative h-[400px] flex items-center justify-center">
-          <div
-            className="absolute rounded-full"
-            style={{
-              width: 340,
-              height: 340,
-              background:
-                "radial-gradient(closest-side, #FFE4E4, transparent 80%)",
-              zIndex: 0,
-            }}
-          />
           <a
             href={DOWNLOAD_URL}
-            className="relative z-10 flex flex-col items-center gap-4 p-6 bg-white rounded-3xl shadow-[0_30px_60px_-20px_rgba(27,58,40,0.2)] hover:-translate-y-1 transition-transform"
+            className="hidden flex-col items-center gap-3 rounded-3xl border border-border bg-cream p-5 transition-transform hover:-translate-y-1 md:flex"
             aria-label="QR orqali yuklab olish"
           >
-            <div className="w-44 h-44 rounded-2xl bg-white border border-border p-3 flex items-center justify-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/qr/download.svg"
-                alt="BAYAN ilovasini yuklab olish uchun QR kod"
-                width={160}
-                height={160}
-                className="w-full h-full"
-              />
-            </div>
-            <span className="text-sm font-bold text-forest">QR orqali yuklash</span>
-            <span className="text-[11px] font-medium text-muted-2 -mt-2">
-              App Store · Google Play
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/qr/download.svg"
+              alt="BAYAN ilovasini yuklab olish uchun QR kod"
+              width={168}
+              height={168}
+              className="h-[168px] w-[168px] rounded-2xl bg-white p-3"
+            />
+            <span className="text-sm font-bold text-forest">Kamerani QR&apos;ga tuting</span>
+            <span className="-mt-2 text-[11px] font-medium text-muted-2">
+              Telefoningiz kerakli do&apos;konni o&apos;zi ochadi
             </span>
           </a>
         </div>

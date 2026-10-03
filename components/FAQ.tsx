@@ -9,28 +9,36 @@ interface QA {
 
 const qas: QA[] = [
   {
-    q: "BAYAN offline ishlaydimi?",
-    a: "Ha, ilovaning asosiy qismi (lug'at, maqol-hikmat, fe'l tuslanishi) internet talab qilmaydi. Faqat yuklab olishda internet kerak.",
+    q: "BAYAN bepulmi?",
+    a: "Asosiy qismi bepul va reklamasiz: lug'at, iboralar va maqollar. Grammatika, Imtihon xonasi va Bayan AI'ning bir qismini bepul sinab ko'rasiz; hammasini ochish uchun Premium — oyiga 35 000 so'm yoki yiliga 290 000 so'm.",
   },
   {
-    q: "iPhone uchun versiyasi bormi?",
-    a: "Ha! BAYAN App Store'da ham, Google Play'da ham mavjud. Yuqoridagi tugmalar yoki QR kod orqali o'z qurilmangizga mos versiyani yuklab oling.",
+    q: "Internetsiz ishlaydimi?",
+    a: "Ha. Lug'at, fe'l tuslanishi, maqollar, iboralar, grammatika darslari va imtihon matnlari telefonning o'zida turadi. Internet faqat Bayan AI, maqolalar, Vikipediya va obuna uchun kerak.",
   },
   {
-    q: "Ilovadan foydalanish pullikmi?",
-    a: "Yo'q, BAYAN bepul. Reklamalar yo'q, yashirin to'lovlar yo'q. Qo'shimcha imkoniyatlar uchun ixtiyoriy Premium mavjud.",
+    q: "Grammatika darslari kimlar uchun?",
+    a: "Noldan boshlovchilar uchun ham, bilimini tizimlashtirmoqchi bo'lganlar uchun ham. Sarf (41 dars) va nahv (70 dars) o'zbek tilida, jadval va misollar bilan; har dars oxirida mashq testi bor.",
+  },
+  {
+    q: "Imtihon xonasi qanday ishlaydi?",
+    a: "B1 dan C2 gacha 71 ta arabcha matn va 1 080 savol. Vaqt bilan ishlaysiz, yakunda ball va har bir savol tahlilini ko'rasiz. B1 darajaning birinchi matni bepul — saytda ham ochib ko'rishingiz mumkin.",
+  },
+  {
+    q: "Iboralar qayerdan olingan?",
+    a: "Dr. Suvayfiy Fathiyning «التعابير الشائعة في المحادثة العربية» kitobidan, muallifning rasmiy ruxsati bilan. O'zbekcha tarjima — Bayan jamoasining mehnati. Iboralar bo'limi bepul.",
   },
   {
     q: "Maqolalar qaysi manbalardan olinadi?",
-    a: "Hozirda \"باحثو اللغة العربية\" (bahethoarabia.com) saytidan rasmiy ruxsat bilan. Har bir maqolaga asl manbaga havola qo'shilgan.",
+    a: "\"باحثو اللغة العربية\" (bahethoarabia.com) saytidan rasmiy ruxsat bilan. Har bir maqolaga asl manbaga havola qo'shilgan.",
   },
   {
     q: "Lotin va kirill ikkalasi ishlaydimi?",
-    a: "Ha, qidiruv har ikkala yozuvni tushunadi. Sozlamalardan yozuvni tanlash mumkin.",
+    a: "Ha, qidiruv har ikkala yozuvni tushunadi, ilovani esa istalgan yozuvda ishlatasiz.",
   },
   {
     q: "Qanday qurilmalarda ishlaydi?",
-    a: "iPhone va iPad (iOS 14 va undan yuqori), Android telefon va planshetlar. Ikkala versiya bir xil lug'at bazasidan foydalanadi.",
+    a: "iPhone va iPad (iOS 15 va undan yuqori), Android 7.0 va undan yuqori telefon va planshetlar.",
   },
 ];
 
