@@ -29,61 +29,68 @@ export function Nav() {
 
   // Close the drawer on route change and lock body scroll while open.
   useEffect(() => setOpen(false), [pathname]);
+  // Lock scrolling on <html>, not <body>: html has overflow-x: clip, so an
+  // overflow on body would turn body into the scroll container and the
+  // sticky header would jump back to the top of the page.
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    const root = document.documentElement;
+    root.style.overflow = open ? "hidden" : "";
     return () => {
-      document.body.style.overflow = "";
+      root.style.overflow = "";
     };
   }, [open]);
 
   return (
-    <header className="w-full bg-cream/80 backdrop-blur-xl supports-[backdrop-filter]:bg-cream/70 sticky top-0 z-40 border-b border-border/60">
-      <nav className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-16 h-16 lg:h-20 flex items-center">
-        <Link href="/" aria-label="BAYAN — bosh sahifa" className="shrink-0">
-          <BayanLogo size={40} />
-        </Link>
-        <div className="flex-1" />
+    <>
+      <header className="w-full bg-cream/80 backdrop-blur-xl supports-[backdrop-filter]:bg-cream/70 sticky top-0 z-40 border-b border-border/60">
+        <nav className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-16 h-16 lg:h-20 flex items-center">
+          <Link href="/" aria-label="BAYAN — bosh sahifa" className="shrink-0">
+            <BayanLogo size={40} />
+          </Link>
+          <div className="flex-1" />
 
-        <div className="hidden lg:flex items-center gap-7">
-          {NAV_LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`text-sm transition-colors hover:text-forest ${
-                isActive(pathname, l.href)
-                  ? "font-semibold text-forest"
-                  : "font-medium text-muted"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
-        </div>
+          <div className="hidden lg:flex items-center gap-7">
+            {NAV_LINKS.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`text-sm transition-colors hover:text-forest ${
+                  isActive(pathname, l.href)
+                    ? "font-semibold text-forest"
+                    : "font-medium text-muted"
+                }`}
+              >
+                {l.label}
+              </Link>
+            ))}
+          </div>
 
-        <a
-          href={pathname === "/" ? "#download" : DOWNLOAD_URL}
-          className="hidden sm:inline-flex ml-7 pill items-center gap-2 px-5 py-2.5 bg-forest text-white text-[13px] font-bold hover:bg-forest-dark transition-colors"
-        >
-          <DownloadIcon />
-          Yuklab olish
-        </a>
+          <a
+            href={pathname === "/" ? "#download" : DOWNLOAD_URL}
+            className="hidden sm:inline-flex ml-7 pill items-center gap-2 px-5 py-2.5 bg-forest text-white text-[13px] font-bold hover:bg-forest-dark transition-colors"
+          >
+            <DownloadIcon />
+            Yuklab olish
+          </a>
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-label={open ? "Menyuni yopish" : "Menyuni ochish"}
-          aria-expanded={open}
-          aria-controls="mobile-menu"
-          className="lg:hidden ml-3 inline-flex items-center justify-center w-11 h-11 rounded-full bg-white border border-border-2 text-forest"
-        >
-          {open ? <CloseIcon /> : <MenuIcon />}
-        </button>
-      </nav>
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={open ? "Menyuni yopish" : "Menyuni ochish"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            className="lg:hidden ml-3 inline-flex items-center justify-center w-11 h-11 rounded-full bg-white border border-border-2 text-forest"
+          >
+            {open ? <CloseIcon /> : <MenuIcon />}
+          </button>
+        </nav>
+      </header>
 
-      {/* Mobile drawer */}
+      {/* Mobile drawer — kept outside <header>: the header's backdrop-filter
+          would otherwise become the containing block of this fixed panel. */}
       <div
         id="mobile-menu"
-        className={`lg:hidden fixed inset-x-0 top-16 bottom-0 z-30 bg-cream transition-opacity duration-200 ${
+        className={`lg:hidden fixed inset-x-0 top-16 bottom-0 z-30 overflow-y-auto bg-cream transition-opacity duration-200 ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         aria-hidden={!open}
@@ -117,7 +124,7 @@ export function Nav() {
           </p>
         </div>
       </div>
-    </header>
+    </>
   );
 }
 
